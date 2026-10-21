@@ -1,0 +1,47 @@
+# cargo test
+test callgraph::tests::normal_session_has_no_anomalies ... ok
+test callgraph::tests::both_directions_share_session ... ok
+test callgraph::tests::call_before_initialize_is_anomalous ... ok
+test callgraph::tests::unknown_and_disallowed ... ok
+test patterns::tests::benign_passes ... ok
+test patterns::tests::beyond_window_is_not_seen ... ok
+test patterns::tests::case_insensitive_substring_in_window ... ok
+test patterns::tests::defaults_fit_kernel_limits ... ok
+test callgraph::tests::extracts_method_from_truncated_json ... ok
+test patterns::tests::rejects_bad_patterns ... ok
+test semantic::tests::normalize_is_stable ... ok
+test semantic::tests::benign_mcp_request ... ok
+test semantic::tests::obfuscated_injection_blocks ... ok
+test semantic::tests::plain_injection_blocks ... ok
+test semantic::tests::role_token_plus_phrase_blocks ... ok
+test semantic::tests::spanish_injection_blocks ... ok
+test semantic::tests::zero_width_is_suspicious_not_blocking_alone ... ok
+test wire::tests::event_roundtrip ... ok
+test wire::tests::layout_matches_c ... ok
+test result: ok. 19 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+# clippy -D warnings
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.09s
+
+# demo (sudo, lo, xdpgeneric)
+{"caso": "benigno_mcp", "eco_por_paso": [true, true], "esperado": [true, true], "ok": true}
+{"caso": "inyeccion_literal_kernel", "eco_por_paso": [false], "esperado": [false], "ok": true}
+{"caso": "inyeccion_ofuscada_usuario", "eco_por_paso": [true, false], "esperado": [null, false], "ok": true}
+{"caso": "grafo_call_antes_de_init", "eco_por_paso": [true, false], "esperado": [null, false], "ok": true}
+RESULTADO: PASS
+----- log del cargador -----
+[fnbr-xdp-fw] XDP adjuntado a lo (xdpgeneric/skb) vigilando puertos [18080]
+[PASS] 127.0.0.1:58304 -> 127.0.0.1:18080 149B
+[PASS] 127.0.0.1:18080 -> 127.0.0.1:58304 149B
+[PASS] 127.0.0.1:58304 -> 127.0.0.1:18080 137B
+[PASS] 127.0.0.1:18080 -> 127.0.0.1:58304 137B
+[KERNEL DROP] 127.0.0.1:58306 -> 127.0.0.1:18080 patrón #0 (Some("ignore previous instructions")) — flujo bloqueado
+[USER BLOCK] 127.0.0.1:58314 -> 127.0.0.1:18080 — semántico ["frase:ignorepreviousinstructions"] — siguientes segmentos se descartan en XDP
+[USER BLOCK] 127.0.0.1:18080 -> 127.0.0.1:58314 — semántico ["frase:ignorepreviousinstructions"] — siguientes segmentos se descartan en XDP
+[USER BLOCK] 127.0.0.1:58318 -> 127.0.0.1:18080 — grafo BeforeInitialize("tools/call") — siguientes segmentos se descartan en XDP
+[PASS] 127.0.0.1:18080 -> 127.0.0.1:58318 163B
+[stats] seen=1847 watched=50 drop_pattern=1 drop_blocked=19 pass=30 events_lost=0
+[fnbr-xdp-fw] desadjuntando XDP de lo
+XDP desadjuntado correctamente.

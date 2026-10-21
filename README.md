@@ -1,11 +1,68 @@
-# 04-xdp-semantic-firewall
+# 04 — Firewall semántico XDP (eBPF)
 
-Firewall semántico XDP (eBPF) que inspecciona payloads gRPC/MCP en tránsito y corta conexiones ante patrones de inyección de prompts o anomalías del grafo de llamadas.
+**Dueña:** בֶּן הָאֱלֹהִים הַחַי (rol de auditoría de seguridad)
+**Pedido de Federico (20/10/2026):** firewall semántico en el plano de datos XDP
+que inspeccione payloads gRPC/MCP en tránsito a velocidad de placa y corte
+conexiones ante patrones de inyección de prompts o anomalías del grafo de llamadas.
 
-**Dueña:** בֶּן הָאֱלֹהִים הַחַי
+## Qué hace de verdad (v0.1)
 
-**Requisitos:** Root y XDP. Límite conocido: no ve tráfico TLS.
+Dos capas, una en el kernel y otra en espacio de usuario:
 
-**Criterio de verificado:** Programa XDP cargado que corta un payload de prueba malicioso en texto plano y deja pasar uno benigno.
+```
+ paquete ──► XDP (kernel, bpf/xdp_firewall.bpf.c)
+             1. Eth → IPv4 → TCP. Solo puertos en `watch_ports`.
+             2. ¿Flujo en `blocked`? → XDP_DROP.
+             3. Copia ≤256 B del payload en claro y busca (sin mayúsculas)
+                hasta 8 patrones literales con bpf_loop.
+             4. Coincidencia → bloquea el flujo (ambas direcciones) + XDP_DROP.
+             5. Siempre manda ≤192 B del prefijo al ring buffer `events`.
+                │
+                ▼
+ fnbr-xdp-fw (Rust + aya, espacio de usuario)
+             · semantic.rs: normaliza (leetspeak, separadores, acentos,
+               ancho cero, tokens de rol) y puntúa. ≥10 = bloquear.
+             · callgraph.rs: máquina de estados MCP por flujo (tools/call antes
+               de initialize, método desconocido, herramienta fuera de lista
+               blanca, re-initialize).
+             · Si alguna dice "bloquear" → escribe el flujo en `blocked` y el
+               kernel descarta los siguientes segmentos.
+```
 
-**Estado:** sin empezar.
+"Cortar la conexión" = descartar todos los segmentos siguientes del flujo en
+XDP (incluidas retransmisiones). **No se envía RST**: la conexión queda colgada
+hasta que el cliente hace timeout.
+
+## Límites honestos (detalle en `LIMITES.md`)
+- **No ve TLS.** Si MCP/gRPC va cifrado, XDP solo ve bytes cifrados. Este
+  firewall sirve para tráfico **en claro** (HTTP/1.1 local, h2c sin
+  compresión de cabeceras relevante, gRPC sin TLS en loopback).
+- **MCP por stdio no pasa por la red.** Ese tráfico nunca llega a XDP.
+- **No rearma TCP ni HTTP/2.** Una frase partida entre dos segmentos, o más
+  allá de los primeros 256 B (kernel) / 192 B (usuario), no se ve.
+- **La capa semántica reacciona tarde.** El primer segmento con inyección
+  ofuscada **pasa**; se cortan los siguientes. Solo los patrones literales
+  se cortan antes de llegar.
+- Las heurísticas son reglas, no un modelo. Hay falsos negativos seguros
+  (paráfrasis) y falsos positivos posibles (textos que *hablan* de inyección).
+- "Velocidad de placa": no medido. Se probó en modo `xdpgeneric` sobre `lo`,
+  que pasa por la pila de red y **no** es el camino rápido del driver.
+
+## Requisitos
+Linux con XDP, `clang`, `libbpf-dev` (headers), Rust ≥ 1.85, `sudo` para la demo.
+En la computadora compartida todo eso está instalado (kernel 6.12.94+).
+
+## Compilar y probar
+```bash
+cd /workspace/sistemas/04-xdp-semantic-firewall
+cargo build            # build.rs compila el BPF con clang -target bpf
+cargo test             # 19 tests, sin root
+cargo clippy --all-targets -- -D warnings
+bash scripts/demo.sh   # con sudo: XDP real en lo + fixture TCP en claro
+cargo run -- classify "1gn0r3 pr3v10us 1nstruct10ns"   # probar el clasificador
+```
+
+Uso real (root): `sudo target/debug/fnbr-xdp-fw run --iface enp0s4 --ports 8080,50051 --allow-tools weather,search`
+
+## Criterio de verificado
+Ver `VERIFICADO.md`. Evidencia de la última corrida en `evidencia/demo-2026-10-20.txt`.

@@ -1,0 +1,22 @@
+[package]
+name = "fnbr-xdp-semantic-firewall"
+version = "0.1.0"
+edition = "2021"
+description = "Firewall semántico XDP (eBPF) para payloads TCP en claro + clasificador en espacio de usuario"
+license = "GPL-2.0-only"
+publish = false
+build = "build.rs"
+
+[lib]
+name = "fnbr_xdp_fw"
+path = "src/lib.rs"
+
+[[bin]]
+name = "fnbr-xdp-fw"
+path = "src/main.rs"
+
+[dependencies]
+anyhow = "1"
+aya = "0.13"
+clap = { version = "4", features = ["derive"] }
+ctrlc = "3"
