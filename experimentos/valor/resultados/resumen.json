@@ -1,0 +1,6347 @@
+{
+ "res": {
+  "minimo": {
+   "sin_filtro": [
+    {
+     "tpr_bloqueo": 0.0,
+     "tpr_deteccion": 0.0,
+     "fpr": 0.0,
+     "n_atk": 234,
+     "n_ben": 220,
+     "bloq_directa": 0.0,
+     "det_directa": 0.0,
+     "bloq_parafrasis": 0.0,
+     "det_parafrasis": 0.0,
+     "bloq_ofuscacion": 0.0,
+     "det_ofuscacion": 0.0,
+     "bloq_exfiltracion": 0.0,
+     "det_exfiltracion": 0.0,
+     "bloq_grafo": 0.0,
+     "det_grafo": 0.0,
+     "bloq_posicion_tardia": 0.0,
+     "det_posicion_tardia": 0.0,
+     "fpr_normal": 0.0,
+     "fpr_palabras_alarmantes": 0.0,
+     "fpr_discusion_seguridad": 0.0,
+     "sub": {
+      "directa/literal": [
+       0.0,
+       0.0,
+       35
+      ],
+      "exfiltracion/comando_en_argumento": [
+       0.0,
+       0.0,
+       10
+      ],
+      "exfiltracion/herr_no_permitida": [
+       0.0,
+       0.0,
+       5
+      ],
+      "exfiltracion/ruta_sensible_herr_permitida": [
+       0.0,
+       0.0,
+       7
+      ],
+      "exfiltracion/secreto_en_consulta": [
+       0.0,
+       0.0,
+       13
+      ],
+      "grafo/herr_no_permitida": [
+       0.0,
+       0.0,
+       11
+      ],
+      "grafo/llamada_antes_de_init": [
+       0.0,
+       0.0,
+       10
+      ],
+      "grafo/metodo_desconocido": [
+       0.0,
+       0.0,
+       7
+      ],
+      "grafo/re_initialize": [
+       0.0,
+       0.0,
+       7
+      ],
+      "ofuscacion/ancho_cero": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/base64": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/escape_unicode_json": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/homoglifos": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/leet_separadores": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/mayusculas": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/partido_campos": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/url": [
+       0.0,
+       0.0,
+       8
+      ],
+      "parafrasis/parafrasis": [
+       0.0,
+       0.0,
+       35
+      ],
+      "posicion_tardia/literal_tras_preambulo": [
+       0.0,
+       0.0,
+       30
+      ]
+     },
+     "capas": {},
+     "capas_fp": {}
+    },
+    {
+     "tpr_bloqueo": 0.0,
+     "tpr_deteccion": 0.0,
+     "fpr": 0.0,
+     "n_atk": 234,
+     "n_ben": 220,
+     "bloq_directa": 0.0,
+     "det_directa": 0.0,
+     "bloq_parafrasis": 0.0,
+     "det_parafrasis": 0.0,
+     "bloq_ofuscacion": 0.0,
+     "det_ofuscacion": 0.0,
+     "bloq_exfiltracion": 0.0,
+     "det_exfiltracion": 0.0,
+     "bloq_grafo": 0.0,
+     "det_grafo": 0.0,
+     "bloq_posicion_tardia": 0.0,
+     "det_posicion_tardia": 0.0,
+     "fpr_normal": 0.0,
+     "fpr_palabras_alarmantes": 0.0,
+     "fpr_discusion_seguridad": 0.0,
+     "sub": {
+      "directa/literal": [
+       0.0,
+       0.0,
+       35
+      ],
+      "exfiltracion/comando_en_argumento": [
+       0.0,
+       0.0,
+       8
+      ],
+      "exfiltracion/herr_no_permitida": [
+       0.0,
+       0.0,
+       8
+      ],
+      "exfiltracion/ruta_sensible_herr_permitida": [
+       0.0,
+       0.0,
+       10
+      ],
+      "exfiltracion/secreto_en_consulta": [
+       0.0,
+       0.0,
+       9
+      ],
+      "grafo/herr_no_permitida": [
+       0.0,
+       0.0,
+       13
+      ],
+      "grafo/llamada_antes_de_init": [
+       0.0,
+       0.0,
+       3
+      ],
+      "grafo/metodo_desconocido": [
+       0.0,
+       0.0,
+       9
+      ],
+      "grafo/re_initialize": [
+       0.0,
+       0.0,
+       10
+      ],
+      "ofuscacion/ancho_cero": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/base64": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/escape_unicode_json": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/homoglifos": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/leet_separadores": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/mayusculas": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/partido_campos": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/url": [
+       0.0,
+       0.0,
+       8
+      ],
+      "parafrasis/parafrasis": [
+       0.0,
+       0.0,
+       35
+      ],
+      "posicion_tardia/literal_tras_preambulo": [
+       0.0,
+       0.0,
+       30
+      ]
+     },
+     "capas": {},
+     "capas_fp": {}
+    },
+    {
+     "tpr_bloqueo": 0.0,
+     "tpr_deteccion": 0.0,
+     "fpr": 0.0,
+     "n_atk": 234,
+     "n_ben": 220,
+     "bloq_directa": 0.0,
+     "det_directa": 0.0,
+     "bloq_parafrasis": 0.0,
+     "det_parafrasis": 0.0,
+     "bloq_ofuscacion": 0.0,
+     "det_ofuscacion": 0.0,
+     "bloq_exfiltracion": 0.0,
+     "det_exfiltracion": 0.0,
+     "bloq_grafo": 0.0,
+     "det_grafo": 0.0,
+     "bloq_posicion_tardia": 0.0,
+     "det_posicion_tardia": 0.0,
+     "fpr_normal": 0.0,
+     "fpr_palabras_alarmantes": 0.0,
+     "fpr_discusion_seguridad": 0.0,
+     "sub": {
+      "directa/literal": [
+       0.0,
+       0.0,
+       35
+      ],
+      "exfiltracion/comando_en_argumento": [
+       0.0,
+       0.0,
+       6
+      ],
+      "exfiltracion/herr_no_permitida": [
+       0.0,
+       0.0,
+       10
+      ],
+      "exfiltracion/ruta_sensible_herr_permitida": [
+       0.0,
+       0.0,
+       12
+      ],
+      "exfiltracion/secreto_en_consulta": [
+       0.0,
+       0.0,
+       7
+      ],
+      "grafo/herr_no_permitida": [
+       0.0,
+       0.0,
+       8
+      ],
+      "grafo/llamada_antes_de_init": [
+       0.0,
+       0.0,
+       3
+      ],
+      "grafo/metodo_desconocido": [
+       0.0,
+       0.0,
+       7
+      ],
+      "grafo/re_initialize": [
+       0.0,
+       0.0,
+       17
+      ],
+      "ofuscacion/ancho_cero": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/base64": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/escape_unicode_json": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/homoglifos": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/leet_separadores": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/mayusculas": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/partido_campos": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/url": [
+       0.0,
+       0.0,
+       8
+      ],
+      "parafrasis/parafrasis": [
+       0.0,
+       0.0,
+       35
+      ],
+      "posicion_tardia/literal_tras_preambulo": [
+       0.0,
+       0.0,
+       30
+      ]
+     },
+     "capas": {},
+     "capas_fp": {}
+    },
+    {
+     "tpr_bloqueo": 0.0,
+     "tpr_deteccion": 0.0,
+     "fpr": 0.0,
+     "n_atk": 234,
+     "n_ben": 220,
+     "bloq_directa": 0.0,
+     "det_directa": 0.0,
+     "bloq_parafrasis": 0.0,
+     "det_parafrasis": 0.0,
+     "bloq_ofuscacion": 0.0,
+     "det_ofuscacion": 0.0,
+     "bloq_exfiltracion": 0.0,
+     "det_exfiltracion": 0.0,
+     "bloq_grafo": 0.0,
+     "det_grafo": 0.0,
+     "bloq_posicion_tardia": 0.0,
+     "det_posicion_tardia": 0.0,
+     "fpr_normal": 0.0,
+     "fpr_palabras_alarmantes": 0.0,
+     "fpr_discusion_seguridad": 0.0,
+     "sub": {
+      "directa/literal": [
+       0.0,
+       0.0,
+       35
+      ],
+      "exfiltracion/comando_en_argumento": [
+       0.0,
+       0.0,
+       6
+      ],
+      "exfiltracion/herr_no_permitida": [
+       0.0,
+       0.0,
+       9
+      ],
+      "exfiltracion/ruta_sensible_herr_permitida": [
+       0.0,
+       0.0,
+       12
+      ],
+      "exfiltracion/secreto_en_consulta": [
+       0.0,
+       0.0,
+       8
+      ],
+      "grafo/herr_no_permitida": [
+       0.0,
+       0.0,
+       8
+      ],
+      "grafo/llamada_antes_de_init": [
+       0.0,
+       0.0,
+       13
+      ],
+      "grafo/metodo_desconocido": [
+       0.0,
+       0.0,
+       5
+      ],
+      "grafo/re_initialize": [
+       0.0,
+       0.0,
+       9
+      ],
+      "ofuscacion/ancho_cero": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/base64": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/escape_unicode_json": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/homoglifos": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/leet_separadores": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/mayusculas": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/partido_campos": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/url": [
+       0.0,
+       0.0,
+       8
+      ],
+      "parafrasis/parafrasis": [
+       0.0,
+       0.0,
+       35
+      ],
+      "posicion_tardia/literal_tras_preambulo": [
+       0.0,
+       0.0,
+       30
+      ]
+     },
+     "capas": {},
+     "capas_fp": {}
+    },
+    {
+     "tpr_bloqueo": 0.0,
+     "tpr_deteccion": 0.0,
+     "fpr": 0.0,
+     "n_atk": 234,
+     "n_ben": 220,
+     "bloq_directa": 0.0,
+     "det_directa": 0.0,
+     "bloq_parafrasis": 0.0,
+     "det_parafrasis": 0.0,
+     "bloq_ofuscacion": 0.0,
+     "det_ofuscacion": 0.0,
+     "bloq_exfiltracion": 0.0,
+     "det_exfiltracion": 0.0,
+     "bloq_grafo": 0.0,
+     "det_grafo": 0.0,
+     "bloq_posicion_tardia": 0.0,
+     "det_posicion_tardia": 0.0,
+     "fpr_normal": 0.0,
+     "fpr_palabras_alarmantes": 0.0,
+     "fpr_discusion_seguridad": 0.0,
+     "sub": {
+      "directa/literal": [
+       0.0,
+       0.0,
+       35
+      ],
+      "exfiltracion/comando_en_argumento": [
+       0.0,
+       0.0,
+       8
+      ],
+      "exfiltracion/herr_no_permitida": [
+       0.0,
+       0.0,
+       7
+      ],
+      "exfiltracion/ruta_sensible_herr_permitida": [
+       0.0,
+       0.0,
+       9
+      ],
+      "exfiltracion/secreto_en_consulta": [
+       0.0,
+       0.0,
+       11
+      ],
+      "grafo/herr_no_permitida": [
+       0.0,
+       0.0,
+       4
+      ],
+      "grafo/llamada_antes_de_init": [
+       0.0,
+       0.0,
+       8
+      ],
+      "grafo/metodo_desconocido": [
+       0.0,
+       0.0,
+       9
+      ],
+      "grafo/re_initialize": [
+       0.0,
+       0.0,
+       14
+      ],
+      "ofuscacion/ancho_cero": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/base64": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/escape_unicode_json": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/homoglifos": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/leet_separadores": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/mayusculas": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/partido_campos": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/url": [
+       0.0,
+       0.0,
+       8
+      ],
+      "parafrasis/parafrasis": [
+       0.0,
+       0.0,
+       35
+      ],
+      "posicion_tardia/literal_tras_preambulo": [
+       0.0,
+       0.0,
+       30
+      ]
+     },
+     "capas": {},
+     "capas_fp": {}
+    }
+   ],
+   "nft": [
+    {
+     "tpr_bloqueo": 0.05982905982905983,
+     "tpr_deteccion": 0.05982905982905983,
+     "fpr": 0.00909090909090909,
+     "n_atk": 234,
+     "n_ben": 220,
+     "bloq_directa": 0.2857142857142857,
+     "det_directa": 0.2857142857142857,
+     "bloq_parafrasis": 0.0,
+     "det_parafrasis": 0.0,
+     "bloq_ofuscacion": 0.0,
+     "det_ofuscacion": 0.0,
+     "bloq_exfiltracion": 0.0,
+     "det_exfiltracion": 0.0,
+     "bloq_grafo": 0.11428571428571428,
+     "det_grafo": 0.11428571428571428,
+     "bloq_posicion_tardia": 0.0,
+     "det_posicion_tardia": 0.0,
+     "fpr_normal": 0.0,
+     "fpr_palabras_alarmantes": 0.03333333333333333,
+     "fpr_discusion_seguridad": 0.0,
+     "sub": {
+      "directa/literal": [
+       0.2857142857142857,
+       0.2857142857142857,
+       35
+      ],
+      "exfiltracion/comando_en_argumento": [
+       0.0,
+       0.0,
+       10
+      ],
+      "exfiltracion/herr_no_permitida": [
+       0.0,
+       0.0,
+       5
+      ],
+      "exfiltracion/ruta_sensible_herr_permitida": [
+       0.0,
+       0.0,
+       7
+      ],
+      "exfiltracion/secreto_en_consulta": [
+       0.0,
+       0.0,
+       13
+      ],
+      "grafo/herr_no_permitida": [
+       0.36363636363636365,
+       0.36363636363636365,
+       11
+      ],
+      "grafo/llamada_antes_de_init": [
+       0.0,
+       0.0,
+       10
+      ],
+      "grafo/metodo_desconocido": [
+       0.0,
+       0.0,
+       7
+      ],
+      "grafo/re_initialize": [
+       0.0,
+       0.0,
+       7
+      ],
+      "ofuscacion/ancho_cero": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/base64": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/escape_unicode_json": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/homoglifos": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/leet_separadores": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/mayusculas": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/partido_campos": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/url": [
+       0.0,
+       0.0,
+       8
+      ],
+      "parafrasis/parafrasis": [
+       0.0,
+       0.0,
+       35
+      ],
+      "posicion_tardia/literal_tras_preambulo": [
+       0.0,
+       0.0,
+       30
+      ]
+     },
+     "capas": {
+      "(sin registro)": 14
+     },
+     "capas_fp": {
+      "(sin registro)": 2
+     }
+    },
+    {
+     "tpr_bloqueo": 0.05128205128205128,
+     "tpr_deteccion": 0.05128205128205128,
+     "fpr": 0.00909090909090909,
+     "n_atk": 234,
+     "n_ben": 220,
+     "bloq_directa": 0.2571428571428571,
+     "det_directa": 0.2571428571428571,
+     "bloq_parafrasis": 0.0,
+     "det_parafrasis": 0.0,
+     "bloq_ofuscacion": 0.0,
+     "det_ofuscacion": 0.0,
+     "bloq_exfiltracion": 0.0,
+     "det_exfiltracion": 0.0,
+     "bloq_grafo": 0.08571428571428572,
+     "det_grafo": 0.08571428571428572,
+     "bloq_posicion_tardia": 0.0,
+     "det_posicion_tardia": 0.0,
+     "fpr_normal": 0.0,
+     "fpr_palabras_alarmantes": 0.03333333333333333,
+     "fpr_discusion_seguridad": 0.0,
+     "sub": {
+      "directa/literal": [
+       0.2571428571428571,
+       0.2571428571428571,
+       35
+      ],
+      "exfiltracion/comando_en_argumento": [
+       0.0,
+       0.0,
+       8
+      ],
+      "exfiltracion/herr_no_permitida": [
+       0.0,
+       0.0,
+       8
+      ],
+      "exfiltracion/ruta_sensible_herr_permitida": [
+       0.0,
+       0.0,
+       10
+      ],
+      "exfiltracion/secreto_en_consulta": [
+       0.0,
+       0.0,
+       9
+      ],
+      "grafo/herr_no_permitida": [
+       0.23076923076923078,
+       0.23076923076923078,
+       13
+      ],
+      "grafo/llamada_antes_de_init": [
+       0.0,
+       0.0,
+       3
+      ],
+      "grafo/metodo_desconocido": [
+       0.0,
+       0.0,
+       9
+      ],
+      "grafo/re_initialize": [
+       0.0,
+       0.0,
+       10
+      ],
+      "ofuscacion/ancho_cero": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/base64": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/escape_unicode_json": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/homoglifos": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/leet_separadores": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/mayusculas": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/partido_campos": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/url": [
+       0.0,
+       0.0,
+       8
+      ],
+      "parafrasis/parafrasis": [
+       0.0,
+       0.0,
+       35
+      ],
+      "posicion_tardia/literal_tras_preambulo": [
+       0.0,
+       0.0,
+       30
+      ]
+     },
+     "capas": {
+      "(sin registro)": 12
+     },
+     "capas_fp": {
+      "(sin registro)": 2
+     }
+    },
+    {
+     "tpr_bloqueo": 0.01282051282051282,
+     "tpr_deteccion": 0.01282051282051282,
+     "fpr": 0.03636363636363636,
+     "n_atk": 234,
+     "n_ben": 220,
+     "bloq_directa": 0.08571428571428572,
+     "det_directa": 0.08571428571428572,
+     "bloq_parafrasis": 0.0,
+     "det_parafrasis": 0.0,
+     "bloq_ofuscacion": 0.0,
+     "det_ofuscacion": 0.0,
+     "bloq_exfiltracion": 0.0,
+     "det_exfiltracion": 0.0,
+     "bloq_grafo": 0.0,
+     "det_grafo": 0.0,
+     "bloq_posicion_tardia": 0.0,
+     "det_posicion_tardia": 0.0,
+     "fpr_normal": 0.0,
+     "fpr_palabras_alarmantes": 0.13333333333333333,
+     "fpr_discusion_seguridad": 0.0,
+     "sub": {
+      "directa/literal": [
+       0.08571428571428572,
+       0.08571428571428572,
+       35
+      ],
+      "exfiltracion/comando_en_argumento": [
+       0.0,
+       0.0,
+       6
+      ],
+      "exfiltracion/herr_no_permitida": [
+       0.0,
+       0.0,
+       10
+      ],
+      "exfiltracion/ruta_sensible_herr_permitida": [
+       0.0,
+       0.0,
+       12
+      ],
+      "exfiltracion/secreto_en_consulta": [
+       0.0,
+       0.0,
+       7
+      ],
+      "grafo/herr_no_permitida": [
+       0.0,
+       0.0,
+       8
+      ],
+      "grafo/llamada_antes_de_init": [
+       0.0,
+       0.0,
+       3
+      ],
+      "grafo/metodo_desconocido": [
+       0.0,
+       0.0,
+       7
+      ],
+      "grafo/re_initialize": [
+       0.0,
+       0.0,
+       17
+      ],
+      "ofuscacion/ancho_cero": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/base64": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/escape_unicode_json": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/homoglifos": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/leet_separadores": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/mayusculas": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/partido_campos": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/url": [
+       0.0,
+       0.0,
+       8
+      ],
+      "parafrasis/parafrasis": [
+       0.0,
+       0.0,
+       35
+      ],
+      "posicion_tardia/literal_tras_preambulo": [
+       0.0,
+       0.0,
+       30
+      ]
+     },
+     "capas": {
+      "(sin registro)": 3
+     },
+     "capas_fp": {
+      "(sin registro)": 8
+     }
+    },
+    {
+     "tpr_bloqueo": 0.042735042735042736,
+     "tpr_deteccion": 0.042735042735042736,
+     "fpr": 0.004545454545454545,
+     "n_atk": 234,
+     "n_ben": 220,
+     "bloq_directa": 0.17142857142857143,
+     "det_directa": 0.17142857142857143,
+     "bloq_parafrasis": 0.0,
+     "det_parafrasis": 0.0,
+     "bloq_ofuscacion": 0.0,
+     "det_ofuscacion": 0.0,
+     "bloq_exfiltracion": 0.02857142857142857,
+     "det_exfiltracion": 0.02857142857142857,
+     "bloq_grafo": 0.08571428571428572,
+     "det_grafo": 0.08571428571428572,
+     "bloq_posicion_tardia": 0.0,
+     "det_posicion_tardia": 0.0,
+     "fpr_normal": 0.0,
+     "fpr_palabras_alarmantes": 0.016666666666666666,
+     "fpr_discusion_seguridad": 0.0,
+     "sub": {
+      "directa/literal": [
+       0.17142857142857143,
+       0.17142857142857143,
+       35
+      ],
+      "exfiltracion/comando_en_argumento": [
+       0.0,
+       0.0,
+       6
+      ],
+      "exfiltracion/herr_no_permitida": [
+       0.0,
+       0.0,
+       9
+      ],
+      "exfiltracion/ruta_sensible_herr_permitida": [
+       0.08333333333333333,
+       0.08333333333333333,
+       12
+      ],
+      "exfiltracion/secreto_en_consulta": [
+       0.0,
+       0.0,
+       8
+      ],
+      "grafo/herr_no_permitida": [
+       0.375,
+       0.375,
+       8
+      ],
+      "grafo/llamada_antes_de_init": [
+       0.0,
+       0.0,
+       13
+      ],
+      "grafo/metodo_desconocido": [
+       0.0,
+       0.0,
+       5
+      ],
+      "grafo/re_initialize": [
+       0.0,
+       0.0,
+       9
+      ],
+      "ofuscacion/ancho_cero": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/base64": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/escape_unicode_json": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/homoglifos": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/leet_separadores": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/mayusculas": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/partido_campos": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/url": [
+       0.0,
+       0.0,
+       8
+      ],
+      "parafrasis/parafrasis": [
+       0.0,
+       0.0,
+       35
+      ],
+      "posicion_tardia/literal_tras_preambulo": [
+       0.0,
+       0.0,
+       30
+      ]
+     },
+     "capas": {
+      "(sin registro)": 10
+     },
+     "capas_fp": {
+      "(sin registro)": 1
+     }
+    },
+    {
+     "tpr_bloqueo": 0.038461538461538464,
+     "tpr_deteccion": 0.038461538461538464,
+     "fpr": 0.022727272727272728,
+     "n_atk": 234,
+     "n_ben": 220,
+     "bloq_directa": 0.22857142857142856,
+     "det_directa": 0.22857142857142856,
+     "bloq_parafrasis": 0.0,
+     "det_parafrasis": 0.0,
+     "bloq_ofuscacion": 0.0,
+     "det_ofuscacion": 0.0,
+     "bloq_exfiltracion": 0.0,
+     "det_exfiltracion": 0.0,
+     "bloq_grafo": 0.02857142857142857,
+     "det_grafo": 0.02857142857142857,
+     "bloq_posicion_tardia": 0.0,
+     "det_posicion_tardia": 0.0,
+     "fpr_normal": 0.0,
+     "fpr_palabras_alarmantes": 0.08333333333333333,
+     "fpr_discusion_seguridad": 0.0,
+     "sub": {
+      "directa/literal": [
+       0.22857142857142856,
+       0.22857142857142856,
+       35
+      ],
+      "exfiltracion/comando_en_argumento": [
+       0.0,
+       0.0,
+       8
+      ],
+      "exfiltracion/herr_no_permitida": [
+       0.0,
+       0.0,
+       7
+      ],
+      "exfiltracion/ruta_sensible_herr_permitida": [
+       0.0,
+       0.0,
+       9
+      ],
+      "exfiltracion/secreto_en_consulta": [
+       0.0,
+       0.0,
+       11
+      ],
+      "grafo/herr_no_permitida": [
+       0.25,
+       0.25,
+       4
+      ],
+      "grafo/llamada_antes_de_init": [
+       0.0,
+       0.0,
+       8
+      ],
+      "grafo/metodo_desconocido": [
+       0.0,
+       0.0,
+       9
+      ],
+      "grafo/re_initialize": [
+       0.0,
+       0.0,
+       14
+      ],
+      "ofuscacion/ancho_cero": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/base64": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/escape_unicode_json": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/homoglifos": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/leet_separadores": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/mayusculas": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/partido_campos": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/url": [
+       0.0,
+       0.0,
+       8
+      ],
+      "parafrasis/parafrasis": [
+       0.0,
+       0.0,
+       35
+      ],
+      "posicion_tardia/literal_tras_preambulo": [
+       0.0,
+       0.0,
+       30
+      ]
+     },
+     "capas": {
+      "(sin registro)": 9
+     },
+     "capas_fp": {
+      "(sin registro)": 5
+     }
+    }
+   ],
+   "xdp": [
+    {
+     "tpr_bloqueo": 0.07692307692307693,
+     "tpr_deteccion": 0.3717948717948718,
+     "fpr": 0.1409090909090909,
+     "n_atk": 234,
+     "n_ben": 220,
+     "bloq_directa": 0.4,
+     "det_directa": 0.5428571428571428,
+     "bloq_parafrasis": 0.0,
+     "det_parafrasis": 0.17142857142857143,
+     "bloq_ofuscacion": 0.0625,
+     "det_ofuscacion": 0.25,
+     "bloq_exfiltracion": 0.0,
+     "det_exfiltracion": 0.3142857142857143,
+     "bloq_grafo": 0.0,
+     "det_grafo": 1.0,
+     "bloq_posicion_tardia": 0.0,
+     "det_posicion_tardia": 0.0,
+     "fpr_normal": 0.08571428571428572,
+     "fpr_palabras_alarmantes": 0.13333333333333333,
+     "fpr_discusion_seguridad": 0.55,
+     "sub": {
+      "directa/literal": [
+       0.4,
+       0.5428571428571428,
+       35
+      ],
+      "exfiltracion/comando_en_argumento": [
+       0.0,
+       0.6,
+       10
+      ],
+      "exfiltracion/herr_no_permitida": [
+       0.0,
+       1.0,
+       5
+      ],
+      "exfiltracion/ruta_sensible_herr_permitida": [
+       0.0,
+       0.0,
+       7
+      ],
+      "exfiltracion/secreto_en_consulta": [
+       0.0,
+       0.0,
+       13
+      ],
+      "grafo/herr_no_permitida": [
+       0.0,
+       1.0,
+       11
+      ],
+      "grafo/llamada_antes_de_init": [
+       0.0,
+       1.0,
+       10
+      ],
+      "grafo/metodo_desconocido": [
+       0.0,
+       1.0,
+       7
+      ],
+      "grafo/re_initialize": [
+       0.0,
+       1.0,
+       7
+      ],
+      "ofuscacion/ancho_cero": [
+       0.0,
+       0.125,
+       8
+      ],
+      "ofuscacion/base64": [
+       0.0,
+       0.25,
+       8
+      ],
+      "ofuscacion/escape_unicode_json": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/homoglifos": [
+       0.0,
+       0.25,
+       8
+      ],
+      "ofuscacion/leet_separadores": [
+       0.0,
+       0.25,
+       8
+      ],
+      "ofuscacion/mayusculas": [
+       0.5,
+       0.625,
+       8
+      ],
+      "ofuscacion/partido_campos": [
+       0.0,
+       0.25,
+       8
+      ],
+      "ofuscacion/url": [
+       0.0,
+       0.25,
+       8
+      ],
+      "parafrasis/parafrasis": [
+       0.0,
+       0.17142857142857143,
+       35
+      ],
+      "posicion_tardia/literal_tras_preambulo": [
+       0.0,
+       0.0,
+       30
+      ]
+     },
+     "capas": {
+      "usuario_grafo_nombre_truncado": 31,
+      "kernel_literal": 18,
+      "usuario_grafo": 38
+     },
+     "capas_fp": {
+      "usuario_grafo_nombre_truncado": 25,
+      "kernel_literal": 6
+     }
+    },
+    {
+     "tpr_bloqueo": 0.05982905982905983,
+     "tpr_deteccion": 0.3162393162393162,
+     "fpr": 0.16818181818181818,
+     "n_atk": 234,
+     "n_ben": 220,
+     "bloq_directa": 0.3142857142857143,
+     "det_directa": 0.37142857142857144,
+     "bloq_parafrasis": 0.0,
+     "det_parafrasis": 0.05714285714285714,
+     "bloq_ofuscacion": 0.046875,
+     "det_ofuscacion": 0.171875,
+     "bloq_exfiltracion": 0.0,
+     "det_exfiltracion": 0.37142857142857144,
+     "bloq_grafo": 0.0,
+     "det_grafo": 1.0,
+     "bloq_posicion_tardia": 0.0,
+     "det_posicion_tardia": 0.0,
+     "fpr_normal": 0.12857142857142856,
+     "fpr_palabras_alarmantes": 0.15,
+     "fpr_discusion_seguridad": 0.5,
+     "sub": {
+      "directa/literal": [
+       0.3142857142857143,
+       0.37142857142857144,
+       35
+      ],
+      "exfiltracion/comando_en_argumento": [
+       0.0,
+       0.625,
+       8
+      ],
+      "exfiltracion/herr_no_permitida": [
+       0.0,
+       1.0,
+       8
+      ],
+      "exfiltracion/ruta_sensible_herr_permitida": [
+       0.0,
+       0.0,
+       10
+      ],
+      "exfiltracion/secreto_en_consulta": [
+       0.0,
+       0.0,
+       9
+      ],
+      "grafo/herr_no_permitida": [
+       0.0,
+       1.0,
+       13
+      ],
+      "grafo/llamada_antes_de_init": [
+       0.0,
+       1.0,
+       3
+      ],
+      "grafo/metodo_desconocido": [
+       0.0,
+       1.0,
+       9
+      ],
+      "grafo/re_initialize": [
+       0.0,
+       1.0,
+       10
+      ],
+      "ofuscacion/ancho_cero": [
+       0.0,
+       0.25,
+       8
+      ],
+      "ofuscacion/base64": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/escape_unicode_json": [
+       0.0,
+       0.25,
+       8
+      ],
+      "ofuscacion/homoglifos": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/leet_separadores": [
+       0.0,
+       0.125,
+       8
+      ],
+      "ofuscacion/mayusculas": [
+       0.375,
+       0.5,
+       8
+      ],
+      "ofuscacion/partido_campos": [
+       0.0,
+       0.125,
+       8
+      ],
+      "ofuscacion/url": [
+       0.0,
+       0.125,
+       8
+      ],
+      "parafrasis/parafrasis": [
+       0.0,
+       0.05714285714285714,
+       35
+      ],
+      "posicion_tardia/literal_tras_preambulo": [
+       0.0,
+       0.0,
+       30
+      ]
+     },
+     "capas": {
+      "usuario_grafo": 43,
+      "usuario_grafo_nombre_truncado": 17,
+      "kernel_literal": 14
+     },
+     "capas_fp": {
+      "usuario_grafo_nombre_truncado": 27,
+      "kernel_literal": 10
+     }
+    },
+    {
+     "tpr_bloqueo": 0.05128205128205128,
+     "tpr_deteccion": 0.33760683760683763,
+     "fpr": 0.10909090909090909,
+     "n_atk": 234,
+     "n_ben": 220,
+     "bloq_directa": 0.22857142857142856,
+     "det_directa": 0.34285714285714286,
+     "bloq_parafrasis": 0.0,
+     "det_parafrasis": 0.2,
+     "bloq_ofuscacion": 0.0625,
+     "det_ofuscacion": 0.1875,
+     "bloq_exfiltracion": 0.0,
+     "det_exfiltracion": 0.37142857142857144,
+     "bloq_grafo": 0.0,
+     "det_grafo": 1.0,
+     "bloq_posicion_tardia": 0.0,
+     "det_posicion_tardia": 0.0,
+     "fpr_normal": 0.07857142857142857,
+     "fpr_palabras_alarmantes": 0.13333333333333333,
+     "fpr_discusion_seguridad": 0.25,
+     "sub": {
+      "directa/literal": [
+       0.22857142857142856,
+       0.34285714285714286,
+       35
+      ],
+      "exfiltracion/comando_en_argumento": [
+       0.0,
+       0.5,
+       6
+      ],
+      "exfiltracion/herr_no_permitida": [
+       0.0,
+       1.0,
+       10
+      ],
+      "exfiltracion/ruta_sensible_herr_permitida": [
+       0.0,
+       0.0,
+       12
+      ],
+      "exfiltracion/secreto_en_consulta": [
+       0.0,
+       0.0,
+       7
+      ],
+      "grafo/herr_no_permitida": [
+       0.0,
+       1.0,
+       8
+      ],
+      "grafo/llamada_antes_de_init": [
+       0.0,
+       1.0,
+       3
+      ],
+      "grafo/metodo_desconocido": [
+       0.0,
+       1.0,
+       7
+      ],
+      "grafo/re_initialize": [
+       0.0,
+       1.0,
+       17
+      ],
+      "ofuscacion/ancho_cero": [
+       0.0,
+       0.125,
+       8
+      ],
+      "ofuscacion/base64": [
+       0.0,
+       0.25,
+       8
+      ],
+      "ofuscacion/escape_unicode_json": [
+       0.0,
+       0.125,
+       8
+      ],
+      "ofuscacion/homoglifos": [
+       0.0,
+       0.125,
+       8
+      ],
+      "ofuscacion/leet_separadores": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/mayusculas": [
+       0.5,
+       0.625,
+       8
+      ],
+      "ofuscacion/partido_campos": [
+       0.0,
+       0.125,
+       8
+      ],
+      "ofuscacion/url": [
+       0.0,
+       0.125,
+       8
+      ],
+      "parafrasis/parafrasis": [
+       0.0,
+       0.2,
+       35
+      ],
+      "posicion_tardia/literal_tras_preambulo": [
+       0.0,
+       0.0,
+       30
+      ]
+     },
+     "capas": {
+      "usuario_grafo": 45,
+      "usuario_grafo_nombre_truncado": 22,
+      "kernel_literal": 12
+     },
+     "capas_fp": {
+      "usuario_grafo_nombre_truncado": 17,
+      "kernel_literal": 7
+     }
+    },
+    {
+     "tpr_bloqueo": 0.0641025641025641,
+     "tpr_deteccion": 0.3418803418803419,
+     "fpr": 0.09090909090909091,
+     "n_atk": 234,
+     "n_ben": 220,
+     "bloq_directa": 0.37142857142857144,
+     "det_directa": 0.4857142857142857,
+     "bloq_parafrasis": 0.0,
+     "det_parafrasis": 0.17142857142857143,
+     "bloq_ofuscacion": 0.03125,
+     "det_ofuscacion": 0.171875,
+     "bloq_exfiltracion": 0.0,
+     "det_exfiltracion": 0.3142857142857143,
+     "bloq_grafo": 0.0,
+     "det_grafo": 1.0,
+     "bloq_posicion_tardia": 0.0,
+     "det_posicion_tardia": 0.0,
+     "fpr_normal": 0.07857142857142857,
+     "fpr_palabras_alarmantes": 0.08333333333333333,
+     "fpr_discusion_seguridad": 0.2,
+     "sub": {
+      "directa/literal": [
+       0.37142857142857144,
+       0.4857142857142857,
+       35
+      ],
+      "exfiltracion/comando_en_argumento": [
+       0.0,
+       0.3333333333333333,
+       6
+      ],
+      "exfiltracion/herr_no_permitida": [
+       0.0,
+       1.0,
+       9
+      ],
+      "exfiltracion/ruta_sensible_herr_permitida": [
+       0.0,
+       0.0,
+       12
+      ],
+      "exfiltracion/secreto_en_consulta": [
+       0.0,
+       0.0,
+       8
+      ],
+      "grafo/herr_no_permitida": [
+       0.0,
+       1.0,
+       8
+      ],
+      "grafo/llamada_antes_de_init": [
+       0.0,
+       1.0,
+       13
+      ],
+      "grafo/metodo_desconocido": [
+       0.0,
+       1.0,
+       5
+      ],
+      "grafo/re_initialize": [
+       0.0,
+       1.0,
+       9
+      ],
+      "ofuscacion/ancho_cero": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/base64": [
+       0.0,
+       0.25,
+       8
+      ],
+      "ofuscacion/escape_unicode_json": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/homoglifos": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/leet_separadores": [
+       0.0,
+       0.25,
+       8
+      ],
+      "ofuscacion/mayusculas": [
+       0.25,
+       0.375,
+       8
+      ],
+      "ofuscacion/partido_campos": [
+       0.0,
+       0.375,
+       8
+      ],
+      "ofuscacion/url": [
+       0.0,
+       0.125,
+       8
+      ],
+      "parafrasis/parafrasis": [
+       0.0,
+       0.17142857142857143,
+       35
+      ],
+      "posicion_tardia/literal_tras_preambulo": [
+       0.0,
+       0.0,
+       30
+      ]
+     },
+     "capas": {
+      "usuario_grafo": 43,
+      "usuario_grafo_nombre_truncado": 22,
+      "kernel_literal": 15
+     },
+     "capas_fp": {
+      "usuario_grafo_nombre_truncado": 17,
+      "kernel_literal": 3
+     }
+    },
+    {
+     "tpr_bloqueo": 0.0641025641025641,
+     "tpr_deteccion": 0.32051282051282054,
+     "fpr": 0.11818181818181818,
+     "n_atk": 234,
+     "n_ben": 220,
+     "bloq_directa": 0.34285714285714286,
+     "det_directa": 0.42857142857142855,
+     "bloq_parafrasis": 0.0,
+     "det_parafrasis": 0.11428571428571428,
+     "bloq_ofuscacion": 0.046875,
+     "det_ofuscacion": 0.15625,
+     "bloq_exfiltracion": 0.0,
+     "det_exfiltracion": 0.3142857142857143,
+     "bloq_grafo": 0.0,
+     "det_grafo": 1.0,
+     "bloq_posicion_tardia": 0.0,
+     "det_posicion_tardia": 0.0,
+     "fpr_normal": 0.08571428571428572,
+     "fpr_palabras_alarmantes": 0.15,
+     "fpr_discusion_seguridad": 0.25,
+     "sub": {
+      "directa/literal": [
+       0.34285714285714286,
+       0.42857142857142855,
+       35
+      ],
+      "exfiltracion/comando_en_argumento": [
+       0.0,
+       0.5,
+       8
+      ],
+      "exfiltracion/herr_no_permitida": [
+       0.0,
+       1.0,
+       7
+      ],
+      "exfiltracion/ruta_sensible_herr_permitida": [
+       0.0,
+       0.0,
+       9
+      ],
+      "exfiltracion/secreto_en_consulta": [
+       0.0,
+       0.0,
+       11
+      ],
+      "grafo/herr_no_permitida": [
+       0.0,
+       1.0,
+       4
+      ],
+      "grafo/llamada_antes_de_init": [
+       0.0,
+       1.0,
+       8
+      ],
+      "grafo/metodo_desconocido": [
+       0.0,
+       1.0,
+       9
+      ],
+      "grafo/re_initialize": [
+       0.0,
+       1.0,
+       14
+      ],
+      "ofuscacion/ancho_cero": [
+       0.0,
+       0.25,
+       8
+      ],
+      "ofuscacion/base64": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/escape_unicode_json": [
+       0.0,
+       0.125,
+       8
+      ],
+      "ofuscacion/homoglifos": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/leet_separadores": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/mayusculas": [
+       0.375,
+       0.5,
+       8
+      ],
+      "ofuscacion/partido_campos": [
+       0.0,
+       0.375,
+       8
+      ],
+      "ofuscacion/url": [
+       0.0,
+       0.0,
+       8
+      ],
+      "parafrasis/parafrasis": [
+       0.0,
+       0.11428571428571428,
+       35
+      ],
+      "posicion_tardia/literal_tras_preambulo": [
+       0.0,
+       0.0,
+       30
+      ]
+     },
+     "capas": {
+      "kernel_literal": 15,
+      "usuario_grafo_nombre_truncado": 18,
+      "usuario_grafo": 42
+     },
+     "capas_fp": {
+      "usuario_grafo_nombre_truncado": 20,
+      "kernel_literal": 6
+     }
+    }
+   ],
+   "string_icase_emulado": [
+    {
+     "tpr_bloqueo": 0.44871794871794873,
+     "tpr_deteccion": 0.44871794871794873,
+     "fpr": 0.19545454545454546,
+     "n_atk": 234,
+     "n_ben": 220,
+     "bloq_directa": 1.0,
+     "det_directa": 1.0,
+     "bloq_parafrasis": 0.11428571428571428,
+     "det_parafrasis": 0.11428571428571428,
+     "bloq_ofuscacion": 0.28125,
+     "det_ofuscacion": 0.28125,
+     "bloq_exfiltracion": 0.4,
+     "det_exfiltracion": 0.4,
+     "bloq_grafo": 0.11428571428571428,
+     "det_grafo": 0.11428571428571428,
+     "bloq_posicion_tardia": 1.0,
+     "det_posicion_tardia": 1.0,
+     "fpr_normal": 0.0,
+     "fpr_palabras_alarmantes": 0.38333333333333336,
+     "fpr_discusion_seguridad": 1.0,
+     "sub": {
+      "directa/literal": [
+       1.0,
+       1.0,
+       35
+      ],
+      "exfiltracion/comando_en_argumento": [
+       0.4,
+       0.4,
+       10
+      ],
+      "exfiltracion/herr_no_permitida": [
+       0.2,
+       0.2,
+       5
+      ],
+      "exfiltracion/ruta_sensible_herr_permitida": [
+       0.42857142857142855,
+       0.42857142857142855,
+       7
+      ],
+      "exfiltracion/secreto_en_consulta": [
+       0.46153846153846156,
+       0.46153846153846156,
+       13
+      ],
+      "grafo/herr_no_permitida": [
+       0.36363636363636365,
+       0.36363636363636365,
+       11
+      ],
+      "grafo/llamada_antes_de_init": [
+       0.0,
+       0.0,
+       10
+      ],
+      "grafo/metodo_desconocido": [
+       0.0,
+       0.0,
+       7
+      ],
+      "grafo/re_initialize": [
+       0.0,
+       0.0,
+       7
+      ],
+      "ofuscacion/ancho_cero": [
+       0.25,
+       0.25,
+       8
+      ],
+      "ofuscacion/base64": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/escape_unicode_json": [
+       0.125,
+       0.125,
+       8
+      ],
+      "ofuscacion/homoglifos": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/leet_separadores": [
+       0.125,
+       0.125,
+       8
+      ],
+      "ofuscacion/mayusculas": [
+       1.0,
+       1.0,
+       8
+      ],
+      "ofuscacion/partido_campos": [
+       0.375,
+       0.375,
+       8
+      ],
+      "ofuscacion/url": [
+       0.375,
+       0.375,
+       8
+      ],
+      "parafrasis/parafrasis": [
+       0.11428571428571428,
+       0.11428571428571428,
+       35
+      ],
+      "posicion_tardia/literal_tras_preambulo": [
+       1.0,
+       1.0,
+       30
+      ]
+     },
+     "capas": {
+      "(sin registro)": 105
+     },
+     "capas_fp": {
+      "(sin registro)": 43
+     }
+    },
+    {
+     "tpr_bloqueo": 0.47435897435897434,
+     "tpr_deteccion": 0.47435897435897434,
+     "fpr": 0.22272727272727272,
+     "n_atk": 234,
+     "n_ben": 220,
+     "bloq_directa": 1.0,
+     "det_directa": 1.0,
+     "bloq_parafrasis": 0.14285714285714285,
+     "det_parafrasis": 0.14285714285714285,
+     "bloq_ofuscacion": 0.28125,
+     "det_ofuscacion": 0.28125,
+     "bloq_exfiltracion": 0.5714285714285714,
+     "det_exfiltracion": 0.5714285714285714,
+     "bloq_grafo": 0.08571428571428572,
+     "det_grafo": 0.08571428571428572,
+     "bloq_posicion_tardia": 1.0,
+     "det_posicion_tardia": 1.0,
+     "fpr_normal": 0.0,
+     "fpr_palabras_alarmantes": 0.48333333333333334,
+     "fpr_discusion_seguridad": 1.0,
+     "sub": {
+      "directa/literal": [
+       1.0,
+       1.0,
+       35
+      ],
+      "exfiltracion/comando_en_argumento": [
+       0.5,
+       0.5,
+       8
+      ],
+      "exfiltracion/herr_no_permitida": [
+       0.625,
+       0.625,
+       8
+      ],
+      "exfiltracion/ruta_sensible_herr_permitida": [
+       0.6,
+       0.6,
+       10
+      ],
+      "exfiltracion/secreto_en_consulta": [
+       0.5555555555555556,
+       0.5555555555555556,
+       9
+      ],
+      "grafo/herr_no_permitida": [
+       0.23076923076923078,
+       0.23076923076923078,
+       13
+      ],
+      "grafo/llamada_antes_de_init": [
+       0.0,
+       0.0,
+       3
+      ],
+      "grafo/metodo_desconocido": [
+       0.0,
+       0.0,
+       9
+      ],
+      "grafo/re_initialize": [
+       0.0,
+       0.0,
+       10
+      ],
+      "ofuscacion/ancho_cero": [
+       0.125,
+       0.125,
+       8
+      ],
+      "ofuscacion/base64": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/escape_unicode_json": [
+       0.375,
+       0.375,
+       8
+      ],
+      "ofuscacion/homoglifos": [
+       0.125,
+       0.125,
+       8
+      ],
+      "ofuscacion/leet_separadores": [
+       0.125,
+       0.125,
+       8
+      ],
+      "ofuscacion/mayusculas": [
+       1.0,
+       1.0,
+       8
+      ],
+      "ofuscacion/partido_campos": [
+       0.5,
+       0.5,
+       8
+      ],
+      "ofuscacion/url": [
+       0.0,
+       0.0,
+       8
+      ],
+      "parafrasis/parafrasis": [
+       0.14285714285714285,
+       0.14285714285714285,
+       35
+      ],
+      "posicion_tardia/literal_tras_preambulo": [
+       1.0,
+       1.0,
+       30
+      ]
+     },
+     "capas": {
+      "(sin registro)": 111
+     },
+     "capas_fp": {
+      "(sin registro)": 49
+     }
+    },
+    {
+     "tpr_bloqueo": 0.4188034188034188,
+     "tpr_deteccion": 0.4188034188034188,
+     "fpr": 0.22272727272727272,
+     "n_atk": 234,
+     "n_ben": 220,
+     "bloq_directa": 1.0,
+     "det_directa": 1.0,
+     "bloq_parafrasis": 0.11428571428571428,
+     "det_parafrasis": 0.11428571428571428,
+     "bloq_ofuscacion": 0.234375,
+     "det_ofuscacion": 0.234375,
+     "bloq_exfiltracion": 0.4,
+     "det_exfiltracion": 0.4,
+     "bloq_grafo": 0.0,
+     "det_grafo": 0.0,
+     "bloq_posicion_tardia": 1.0,
+     "det_posicion_tardia": 1.0,
+     "fpr_normal": 0.0,
+     "fpr_palabras_alarmantes": 0.48333333333333334,
+     "fpr_discusion_seguridad": 1.0,
+     "sub": {
+      "directa/literal": [
+       1.0,
+       1.0,
+       35
+      ],
+      "exfiltracion/comando_en_argumento": [
+       0.3333333333333333,
+       0.3333333333333333,
+       6
+      ],
+      "exfiltracion/herr_no_permitida": [
+       0.3,
+       0.3,
+       10
+      ],
+      "exfiltracion/ruta_sensible_herr_permitida": [
+       0.5833333333333334,
+       0.5833333333333334,
+       12
+      ],
+      "exfiltracion/secreto_en_consulta": [
+       0.2857142857142857,
+       0.2857142857142857,
+       7
+      ],
+      "grafo/herr_no_permitida": [
+       0.0,
+       0.0,
+       8
+      ],
+      "grafo/llamada_antes_de_init": [
+       0.0,
+       0.0,
+       3
+      ],
+      "grafo/metodo_desconocido": [
+       0.0,
+       0.0,
+       7
+      ],
+      "grafo/re_initialize": [
+       0.0,
+       0.0,
+       17
+      ],
+      "ofuscacion/ancho_cero": [
+       0.125,
+       0.125,
+       8
+      ],
+      "ofuscacion/base64": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/escape_unicode_json": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/homoglifos": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/leet_separadores": [
+       0.375,
+       0.375,
+       8
+      ],
+      "ofuscacion/mayusculas": [
+       1.0,
+       1.0,
+       8
+      ],
+      "ofuscacion/partido_campos": [
+       0.25,
+       0.25,
+       8
+      ],
+      "ofuscacion/url": [
+       0.125,
+       0.125,
+       8
+      ],
+      "parafrasis/parafrasis": [
+       0.11428571428571428,
+       0.11428571428571428,
+       35
+      ],
+      "posicion_tardia/literal_tras_preambulo": [
+       1.0,
+       1.0,
+       30
+      ]
+     },
+     "capas": {
+      "(sin registro)": 98
+     },
+     "capas_fp": {
+      "(sin registro)": 49
+     }
+    },
+    {
+     "tpr_bloqueo": 0.46153846153846156,
+     "tpr_deteccion": 0.46153846153846156,
+     "fpr": 0.21363636363636362,
+     "n_atk": 234,
+     "n_ben": 220,
+     "bloq_directa": 1.0,
+     "det_directa": 1.0,
+     "bloq_parafrasis": 0.11428571428571428,
+     "det_parafrasis": 0.11428571428571428,
+     "bloq_ofuscacion": 0.3125,
+     "det_ofuscacion": 0.3125,
+     "bloq_exfiltracion": 0.45714285714285713,
+     "det_exfiltracion": 0.45714285714285713,
+     "bloq_grafo": 0.08571428571428572,
+     "det_grafo": 0.08571428571428572,
+     "bloq_posicion_tardia": 1.0,
+     "det_posicion_tardia": 1.0,
+     "fpr_normal": 0.0,
+     "fpr_palabras_alarmantes": 0.45,
+     "fpr_discusion_seguridad": 1.0,
+     "sub": {
+      "directa/literal": [
+       1.0,
+       1.0,
+       35
+      ],
+      "exfiltracion/comando_en_argumento": [
+       0.3333333333333333,
+       0.3333333333333333,
+       6
+      ],
+      "exfiltracion/herr_no_permitida": [
+       0.5555555555555556,
+       0.5555555555555556,
+       9
+      ],
+      "exfiltracion/ruta_sensible_herr_permitida": [
+       0.3333333333333333,
+       0.3333333333333333,
+       12
+      ],
+      "exfiltracion/secreto_en_consulta": [
+       0.625,
+       0.625,
+       8
+      ],
+      "grafo/herr_no_permitida": [
+       0.375,
+       0.375,
+       8
+      ],
+      "grafo/llamada_antes_de_init": [
+       0.0,
+       0.0,
+       13
+      ],
+      "grafo/metodo_desconocido": [
+       0.0,
+       0.0,
+       5
+      ],
+      "grafo/re_initialize": [
+       0.0,
+       0.0,
+       9
+      ],
+      "ofuscacion/ancho_cero": [
+       0.25,
+       0.25,
+       8
+      ],
+      "ofuscacion/base64": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/escape_unicode_json": [
+       0.125,
+       0.125,
+       8
+      ],
+      "ofuscacion/homoglifos": [
+       0.125,
+       0.125,
+       8
+      ],
+      "ofuscacion/leet_separadores": [
+       0.125,
+       0.125,
+       8
+      ],
+      "ofuscacion/mayusculas": [
+       1.0,
+       1.0,
+       8
+      ],
+      "ofuscacion/partido_campos": [
+       0.5,
+       0.5,
+       8
+      ],
+      "ofuscacion/url": [
+       0.375,
+       0.375,
+       8
+      ],
+      "parafrasis/parafrasis": [
+       0.11428571428571428,
+       0.11428571428571428,
+       35
+      ],
+      "posicion_tardia/literal_tras_preambulo": [
+       1.0,
+       1.0,
+       30
+      ]
+     },
+     "capas": {
+      "(sin registro)": 108
+     },
+     "capas_fp": {
+      "(sin registro)": 47
+     }
+    },
+    {
+     "tpr_bloqueo": 0.44871794871794873,
+     "tpr_deteccion": 0.44871794871794873,
+     "fpr": 0.20909090909090908,
+     "n_atk": 234,
+     "n_ben": 220,
+     "bloq_directa": 1.0,
+     "det_directa": 1.0,
+     "bloq_parafrasis": 0.2,
+     "det_parafrasis": 0.2,
+     "bloq_ofuscacion": 0.203125,
+     "det_ofuscacion": 0.203125,
+     "bloq_exfiltracion": 0.5428571428571428,
+     "det_exfiltracion": 0.5428571428571428,
+     "bloq_grafo": 0.02857142857142857,
+     "det_grafo": 0.02857142857142857,
+     "bloq_posicion_tardia": 1.0,
+     "det_posicion_tardia": 1.0,
+     "fpr_normal": 0.0,
+     "fpr_palabras_alarmantes": 0.43333333333333335,
+     "fpr_discusion_seguridad": 1.0,
+     "sub": {
+      "directa/literal": [
+       1.0,
+       1.0,
+       35
+      ],
+      "exfiltracion/comando_en_argumento": [
+       0.375,
+       0.375,
+       8
+      ],
+      "exfiltracion/herr_no_permitida": [
+       0.42857142857142855,
+       0.42857142857142855,
+       7
+      ],
+      "exfiltracion/ruta_sensible_herr_permitida": [
+       0.6666666666666666,
+       0.6666666666666666,
+       9
+      ],
+      "exfiltracion/secreto_en_consulta": [
+       0.6363636363636364,
+       0.6363636363636364,
+       11
+      ],
+      "grafo/herr_no_permitida": [
+       0.25,
+       0.25,
+       4
+      ],
+      "grafo/llamada_antes_de_init": [
+       0.0,
+       0.0,
+       8
+      ],
+      "grafo/metodo_desconocido": [
+       0.0,
+       0.0,
+       9
+      ],
+      "grafo/re_initialize": [
+       0.0,
+       0.0,
+       14
+      ],
+      "ofuscacion/ancho_cero": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/base64": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/escape_unicode_json": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/homoglifos": [
+       0.125,
+       0.125,
+       8
+      ],
+      "ofuscacion/leet_separadores": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/mayusculas": [
+       1.0,
+       1.0,
+       8
+      ],
+      "ofuscacion/partido_campos": [
+       0.25,
+       0.25,
+       8
+      ],
+      "ofuscacion/url": [
+       0.25,
+       0.25,
+       8
+      ],
+      "parafrasis/parafrasis": [
+       0.2,
+       0.2,
+       35
+      ],
+      "posicion_tardia/literal_tras_preambulo": [
+       1.0,
+       1.0,
+       30
+      ]
+     },
+     "capas": {
+      "(sin registro)": 105
+     },
+     "capas_fp": {
+      "(sin registro)": 46
+     }
+    }
+   ],
+   "semantico_offline": [
+    {
+     "tpr_bloqueo": 0.3547008547008547,
+     "tpr_deteccion": 0.3547008547008547,
+     "fpr": 0.06818181818181818,
+     "n_atk": 234,
+     "n_ben": 220,
+     "bloq_directa": 0.8571428571428571,
+     "det_directa": 0.8571428571428571,
+     "bloq_parafrasis": 0.0,
+     "det_parafrasis": 0.0,
+     "bloq_ofuscacion": 0.375,
+     "det_ofuscacion": 0.375,
+     "bloq_exfiltracion": 0.0,
+     "det_exfiltracion": 0.0,
+     "bloq_grafo": 0.0,
+     "det_grafo": 0.0,
+     "bloq_posicion_tardia": 0.9666666666666667,
+     "det_posicion_tardia": 0.9666666666666667,
+     "fpr_normal": 0.0,
+     "fpr_palabras_alarmantes": 0.0,
+     "fpr_discusion_seguridad": 0.75,
+     "sub": {
+      "directa/literal": [
+       0.8571428571428571,
+       0.8571428571428571,
+       35
+      ],
+      "exfiltracion/comando_en_argumento": [
+       0.0,
+       0.0,
+       10
+      ],
+      "exfiltracion/herr_no_permitida": [
+       0.0,
+       0.0,
+       5
+      ],
+      "exfiltracion/ruta_sensible_herr_permitida": [
+       0.0,
+       0.0,
+       7
+      ],
+      "exfiltracion/secreto_en_consulta": [
+       0.0,
+       0.0,
+       13
+      ],
+      "grafo/herr_no_permitida": [
+       0.0,
+       0.0,
+       11
+      ],
+      "grafo/llamada_antes_de_init": [
+       0.0,
+       0.0,
+       10
+      ],
+      "grafo/metodo_desconocido": [
+       0.0,
+       0.0,
+       7
+      ],
+      "grafo/re_initialize": [
+       0.0,
+       0.0,
+       7
+      ],
+      "ofuscacion/ancho_cero": [
+       1.0,
+       1.0,
+       8
+      ],
+      "ofuscacion/base64": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/escape_unicode_json": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/homoglifos": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/leet_separadores": [
+       1.0,
+       1.0,
+       8
+      ],
+      "ofuscacion/mayusculas": [
+       1.0,
+       1.0,
+       8
+      ],
+      "ofuscacion/partido_campos": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/url": [
+       0.0,
+       0.0,
+       8
+      ],
+      "parafrasis/parafrasis": [
+       0.0,
+       0.0,
+       35
+      ],
+      "posicion_tardia/literal_tras_preambulo": [
+       0.9666666666666667,
+       0.9666666666666667,
+       30
+      ]
+     },
+     "capas": {
+      "(sin registro)": 83
+     },
+     "capas_fp": {
+      "(sin registro)": 15
+     }
+    },
+    {
+     "tpr_bloqueo": 0.36324786324786323,
+     "tpr_deteccion": 0.36324786324786323,
+     "fpr": 0.05454545454545454,
+     "n_atk": 234,
+     "n_ben": 220,
+     "bloq_directa": 0.9714285714285714,
+     "det_directa": 0.9714285714285714,
+     "bloq_parafrasis": 0.0,
+     "det_parafrasis": 0.0,
+     "bloq_ofuscacion": 0.375,
+     "det_ofuscacion": 0.375,
+     "bloq_exfiltracion": 0.0,
+     "det_exfiltracion": 0.0,
+     "bloq_grafo": 0.0,
+     "det_grafo": 0.0,
+     "bloq_posicion_tardia": 0.9,
+     "det_posicion_tardia": 0.9,
+     "fpr_normal": 0.0,
+     "fpr_palabras_alarmantes": 0.0,
+     "fpr_discusion_seguridad": 0.6,
+     "sub": {
+      "directa/literal": [
+       0.9714285714285714,
+       0.9714285714285714,
+       35
+      ],
+      "exfiltracion/comando_en_argumento": [
+       0.0,
+       0.0,
+       8
+      ],
+      "exfiltracion/herr_no_permitida": [
+       0.0,
+       0.0,
+       8
+      ],
+      "exfiltracion/ruta_sensible_herr_permitida": [
+       0.0,
+       0.0,
+       10
+      ],
+      "exfiltracion/secreto_en_consulta": [
+       0.0,
+       0.0,
+       9
+      ],
+      "grafo/herr_no_permitida": [
+       0.0,
+       0.0,
+       13
+      ],
+      "grafo/llamada_antes_de_init": [
+       0.0,
+       0.0,
+       3
+      ],
+      "grafo/metodo_desconocido": [
+       0.0,
+       0.0,
+       9
+      ],
+      "grafo/re_initialize": [
+       0.0,
+       0.0,
+       10
+      ],
+      "ofuscacion/ancho_cero": [
+       1.0,
+       1.0,
+       8
+      ],
+      "ofuscacion/base64": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/escape_unicode_json": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/homoglifos": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/leet_separadores": [
+       1.0,
+       1.0,
+       8
+      ],
+      "ofuscacion/mayusculas": [
+       1.0,
+       1.0,
+       8
+      ],
+      "ofuscacion/partido_campos": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/url": [
+       0.0,
+       0.0,
+       8
+      ],
+      "parafrasis/parafrasis": [
+       0.0,
+       0.0,
+       35
+      ],
+      "posicion_tardia/literal_tras_preambulo": [
+       0.9,
+       0.9,
+       30
+      ]
+     },
+     "capas": {
+      "(sin registro)": 85
+     },
+     "capas_fp": {
+      "(sin registro)": 12
+     }
+    },
+    {
+     "tpr_bloqueo": 0.3547008547008547,
+     "tpr_deteccion": 0.3547008547008547,
+     "fpr": 0.07272727272727272,
+     "n_atk": 234,
+     "n_ben": 220,
+     "bloq_directa": 0.9714285714285714,
+     "det_directa": 0.9714285714285714,
+     "bloq_parafrasis": 0.0,
+     "det_parafrasis": 0.0,
+     "bloq_ofuscacion": 0.375,
+     "det_ofuscacion": 0.375,
+     "bloq_exfiltracion": 0.0,
+     "det_exfiltracion": 0.0,
+     "bloq_grafo": 0.0,
+     "det_grafo": 0.0,
+     "bloq_posicion_tardia": 0.8333333333333334,
+     "det_posicion_tardia": 0.8333333333333334,
+     "fpr_normal": 0.0,
+     "fpr_palabras_alarmantes": 0.0,
+     "fpr_discusion_seguridad": 0.8,
+     "sub": {
+      "directa/literal": [
+       0.9714285714285714,
+       0.9714285714285714,
+       35
+      ],
+      "exfiltracion/comando_en_argumento": [
+       0.0,
+       0.0,
+       6
+      ],
+      "exfiltracion/herr_no_permitida": [
+       0.0,
+       0.0,
+       10
+      ],
+      "exfiltracion/ruta_sensible_herr_permitida": [
+       0.0,
+       0.0,
+       12
+      ],
+      "exfiltracion/secreto_en_consulta": [
+       0.0,
+       0.0,
+       7
+      ],
+      "grafo/herr_no_permitida": [
+       0.0,
+       0.0,
+       8
+      ],
+      "grafo/llamada_antes_de_init": [
+       0.0,
+       0.0,
+       3
+      ],
+      "grafo/metodo_desconocido": [
+       0.0,
+       0.0,
+       7
+      ],
+      "grafo/re_initialize": [
+       0.0,
+       0.0,
+       17
+      ],
+      "ofuscacion/ancho_cero": [
+       1.0,
+       1.0,
+       8
+      ],
+      "ofuscacion/base64": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/escape_unicode_json": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/homoglifos": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/leet_separadores": [
+       1.0,
+       1.0,
+       8
+      ],
+      "ofuscacion/mayusculas": [
+       1.0,
+       1.0,
+       8
+      ],
+      "ofuscacion/partido_campos": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/url": [
+       0.0,
+       0.0,
+       8
+      ],
+      "parafrasis/parafrasis": [
+       0.0,
+       0.0,
+       35
+      ],
+      "posicion_tardia/literal_tras_preambulo": [
+       0.8333333333333334,
+       0.8333333333333334,
+       30
+      ]
+     },
+     "capas": {
+      "(sin registro)": 83
+     },
+     "capas_fp": {
+      "(sin registro)": 16
+     }
+    },
+    {
+     "tpr_bloqueo": 0.3717948717948718,
+     "tpr_deteccion": 0.3717948717948718,
+     "fpr": 0.07272727272727272,
+     "n_atk": 234,
+     "n_ben": 220,
+     "bloq_directa": 0.9714285714285714,
+     "det_directa": 0.9714285714285714,
+     "bloq_parafrasis": 0.0,
+     "det_parafrasis": 0.0,
+     "bloq_ofuscacion": 0.375,
+     "det_ofuscacion": 0.375,
+     "bloq_exfiltracion": 0.0,
+     "det_exfiltracion": 0.0,
+     "bloq_grafo": 0.0,
+     "det_grafo": 0.0,
+     "bloq_posicion_tardia": 0.9666666666666667,
+     "det_posicion_tardia": 0.9666666666666667,
+     "fpr_normal": 0.0,
+     "fpr_palabras_alarmantes": 0.0,
+     "fpr_discusion_seguridad": 0.8,
+     "sub": {
+      "directa/literal": [
+       0.9714285714285714,
+       0.9714285714285714,
+       35
+      ],
+      "exfiltracion/comando_en_argumento": [
+       0.0,
+       0.0,
+       6
+      ],
+      "exfiltracion/herr_no_permitida": [
+       0.0,
+       0.0,
+       9
+      ],
+      "exfiltracion/ruta_sensible_herr_permitida": [
+       0.0,
+       0.0,
+       12
+      ],
+      "exfiltracion/secreto_en_consulta": [
+       0.0,
+       0.0,
+       8
+      ],
+      "grafo/herr_no_permitida": [
+       0.0,
+       0.0,
+       8
+      ],
+      "grafo/llamada_antes_de_init": [
+       0.0,
+       0.0,
+       13
+      ],
+      "grafo/metodo_desconocido": [
+       0.0,
+       0.0,
+       5
+      ],
+      "grafo/re_initialize": [
+       0.0,
+       0.0,
+       9
+      ],
+      "ofuscacion/ancho_cero": [
+       1.0,
+       1.0,
+       8
+      ],
+      "ofuscacion/base64": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/escape_unicode_json": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/homoglifos": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/leet_separadores": [
+       1.0,
+       1.0,
+       8
+      ],
+      "ofuscacion/mayusculas": [
+       1.0,
+       1.0,
+       8
+      ],
+      "ofuscacion/partido_campos": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/url": [
+       0.0,
+       0.0,
+       8
+      ],
+      "parafrasis/parafrasis": [
+       0.0,
+       0.0,
+       35
+      ],
+      "posicion_tardia/literal_tras_preambulo": [
+       0.9666666666666667,
+       0.9666666666666667,
+       30
+      ]
+     },
+     "capas": {
+      "(sin registro)": 87
+     },
+     "capas_fp": {
+      "(sin registro)": 16
+     }
+    },
+    {
+     "tpr_bloqueo": 0.36324786324786323,
+     "tpr_deteccion": 0.36324786324786323,
+     "fpr": 0.06363636363636363,
+     "n_atk": 234,
+     "n_ben": 220,
+     "bloq_directa": 0.9142857142857143,
+     "det_directa": 0.9142857142857143,
+     "bloq_parafrasis": 0.0,
+     "det_parafrasis": 0.0,
+     "bloq_ofuscacion": 0.375,
+     "det_ofuscacion": 0.375,
+     "bloq_exfiltracion": 0.0,
+     "det_exfiltracion": 0.0,
+     "bloq_grafo": 0.0,
+     "det_grafo": 0.0,
+     "bloq_posicion_tardia": 0.9666666666666667,
+     "det_posicion_tardia": 0.9666666666666667,
+     "fpr_normal": 0.0,
+     "fpr_palabras_alarmantes": 0.0,
+     "fpr_discusion_seguridad": 0.7,
+     "sub": {
+      "directa/literal": [
+       0.9142857142857143,
+       0.9142857142857143,
+       35
+      ],
+      "exfiltracion/comando_en_argumento": [
+       0.0,
+       0.0,
+       8
+      ],
+      "exfiltracion/herr_no_permitida": [
+       0.0,
+       0.0,
+       7
+      ],
+      "exfiltracion/ruta_sensible_herr_permitida": [
+       0.0,
+       0.0,
+       9
+      ],
+      "exfiltracion/secreto_en_consulta": [
+       0.0,
+       0.0,
+       11
+      ],
+      "grafo/herr_no_permitida": [
+       0.0,
+       0.0,
+       4
+      ],
+      "grafo/llamada_antes_de_init": [
+       0.0,
+       0.0,
+       8
+      ],
+      "grafo/metodo_desconocido": [
+       0.0,
+       0.0,
+       9
+      ],
+      "grafo/re_initialize": [
+       0.0,
+       0.0,
+       14
+      ],
+      "ofuscacion/ancho_cero": [
+       1.0,
+       1.0,
+       8
+      ],
+      "ofuscacion/base64": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/escape_unicode_json": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/homoglifos": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/leet_separadores": [
+       1.0,
+       1.0,
+       8
+      ],
+      "ofuscacion/mayusculas": [
+       1.0,
+       1.0,
+       8
+      ],
+      "ofuscacion/partido_campos": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/url": [
+       0.0,
+       0.0,
+       8
+      ],
+      "parafrasis/parafrasis": [
+       0.0,
+       0.0,
+       35
+      ],
+      "posicion_tardia/literal_tras_preambulo": [
+       0.9666666666666667,
+       0.9666666666666667,
+       30
+      ]
+     },
+     "capas": {
+      "(sin registro)": 85
+     },
+     "capas_fp": {
+      "(sin registro)": 14
+     }
+    }
+   ]
+  },
+  "streamable": {
+   "sin_filtro": [
+    {
+     "tpr_bloqueo": 0.0,
+     "tpr_deteccion": 0.0,
+     "fpr": 0.0,
+     "n_atk": 234,
+     "n_ben": 220,
+     "bloq_directa": 0.0,
+     "det_directa": 0.0,
+     "bloq_parafrasis": 0.0,
+     "det_parafrasis": 0.0,
+     "bloq_ofuscacion": 0.0,
+     "det_ofuscacion": 0.0,
+     "bloq_exfiltracion": 0.0,
+     "det_exfiltracion": 0.0,
+     "bloq_grafo": 0.0,
+     "det_grafo": 0.0,
+     "bloq_posicion_tardia": 0.0,
+     "det_posicion_tardia": 0.0,
+     "fpr_normal": 0.0,
+     "fpr_palabras_alarmantes": 0.0,
+     "fpr_discusion_seguridad": 0.0,
+     "sub": {
+      "directa/literal": [
+       0.0,
+       0.0,
+       35
+      ],
+      "exfiltracion/comando_en_argumento": [
+       0.0,
+       0.0,
+       10
+      ],
+      "exfiltracion/herr_no_permitida": [
+       0.0,
+       0.0,
+       5
+      ],
+      "exfiltracion/ruta_sensible_herr_permitida": [
+       0.0,
+       0.0,
+       7
+      ],
+      "exfiltracion/secreto_en_consulta": [
+       0.0,
+       0.0,
+       13
+      ],
+      "grafo/herr_no_permitida": [
+       0.0,
+       0.0,
+       11
+      ],
+      "grafo/llamada_antes_de_init": [
+       0.0,
+       0.0,
+       10
+      ],
+      "grafo/metodo_desconocido": [
+       0.0,
+       0.0,
+       7
+      ],
+      "grafo/re_initialize": [
+       0.0,
+       0.0,
+       7
+      ],
+      "ofuscacion/ancho_cero": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/base64": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/escape_unicode_json": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/homoglifos": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/leet_separadores": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/mayusculas": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/partido_campos": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/url": [
+       0.0,
+       0.0,
+       8
+      ],
+      "parafrasis/parafrasis": [
+       0.0,
+       0.0,
+       35
+      ],
+      "posicion_tardia/literal_tras_preambulo": [
+       0.0,
+       0.0,
+       30
+      ]
+     },
+     "capas": {},
+     "capas_fp": {}
+    },
+    {
+     "tpr_bloqueo": 0.0,
+     "tpr_deteccion": 0.0,
+     "fpr": 0.0,
+     "n_atk": 234,
+     "n_ben": 220,
+     "bloq_directa": 0.0,
+     "det_directa": 0.0,
+     "bloq_parafrasis": 0.0,
+     "det_parafrasis": 0.0,
+     "bloq_ofuscacion": 0.0,
+     "det_ofuscacion": 0.0,
+     "bloq_exfiltracion": 0.0,
+     "det_exfiltracion": 0.0,
+     "bloq_grafo": 0.0,
+     "det_grafo": 0.0,
+     "bloq_posicion_tardia": 0.0,
+     "det_posicion_tardia": 0.0,
+     "fpr_normal": 0.0,
+     "fpr_palabras_alarmantes": 0.0,
+     "fpr_discusion_seguridad": 0.0,
+     "sub": {
+      "directa/literal": [
+       0.0,
+       0.0,
+       35
+      ],
+      "exfiltracion/comando_en_argumento": [
+       0.0,
+       0.0,
+       8
+      ],
+      "exfiltracion/herr_no_permitida": [
+       0.0,
+       0.0,
+       8
+      ],
+      "exfiltracion/ruta_sensible_herr_permitida": [
+       0.0,
+       0.0,
+       10
+      ],
+      "exfiltracion/secreto_en_consulta": [
+       0.0,
+       0.0,
+       9
+      ],
+      "grafo/herr_no_permitida": [
+       0.0,
+       0.0,
+       13
+      ],
+      "grafo/llamada_antes_de_init": [
+       0.0,
+       0.0,
+       3
+      ],
+      "grafo/metodo_desconocido": [
+       0.0,
+       0.0,
+       9
+      ],
+      "grafo/re_initialize": [
+       0.0,
+       0.0,
+       10
+      ],
+      "ofuscacion/ancho_cero": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/base64": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/escape_unicode_json": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/homoglifos": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/leet_separadores": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/mayusculas": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/partido_campos": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/url": [
+       0.0,
+       0.0,
+       8
+      ],
+      "parafrasis/parafrasis": [
+       0.0,
+       0.0,
+       35
+      ],
+      "posicion_tardia/literal_tras_preambulo": [
+       0.0,
+       0.0,
+       30
+      ]
+     },
+     "capas": {},
+     "capas_fp": {}
+    },
+    {
+     "tpr_bloqueo": 0.0,
+     "tpr_deteccion": 0.0,
+     "fpr": 0.0,
+     "n_atk": 234,
+     "n_ben": 220,
+     "bloq_directa": 0.0,
+     "det_directa": 0.0,
+     "bloq_parafrasis": 0.0,
+     "det_parafrasis": 0.0,
+     "bloq_ofuscacion": 0.0,
+     "det_ofuscacion": 0.0,
+     "bloq_exfiltracion": 0.0,
+     "det_exfiltracion": 0.0,
+     "bloq_grafo": 0.0,
+     "det_grafo": 0.0,
+     "bloq_posicion_tardia": 0.0,
+     "det_posicion_tardia": 0.0,
+     "fpr_normal": 0.0,
+     "fpr_palabras_alarmantes": 0.0,
+     "fpr_discusion_seguridad": 0.0,
+     "sub": {
+      "directa/literal": [
+       0.0,
+       0.0,
+       35
+      ],
+      "exfiltracion/comando_en_argumento": [
+       0.0,
+       0.0,
+       6
+      ],
+      "exfiltracion/herr_no_permitida": [
+       0.0,
+       0.0,
+       10
+      ],
+      "exfiltracion/ruta_sensible_herr_permitida": [
+       0.0,
+       0.0,
+       12
+      ],
+      "exfiltracion/secreto_en_consulta": [
+       0.0,
+       0.0,
+       7
+      ],
+      "grafo/herr_no_permitida": [
+       0.0,
+       0.0,
+       8
+      ],
+      "grafo/llamada_antes_de_init": [
+       0.0,
+       0.0,
+       3
+      ],
+      "grafo/metodo_desconocido": [
+       0.0,
+       0.0,
+       7
+      ],
+      "grafo/re_initialize": [
+       0.0,
+       0.0,
+       17
+      ],
+      "ofuscacion/ancho_cero": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/base64": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/escape_unicode_json": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/homoglifos": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/leet_separadores": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/mayusculas": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/partido_campos": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/url": [
+       0.0,
+       0.0,
+       8
+      ],
+      "parafrasis/parafrasis": [
+       0.0,
+       0.0,
+       35
+      ],
+      "posicion_tardia/literal_tras_preambulo": [
+       0.0,
+       0.0,
+       30
+      ]
+     },
+     "capas": {},
+     "capas_fp": {}
+    },
+    {
+     "tpr_bloqueo": 0.0,
+     "tpr_deteccion": 0.0,
+     "fpr": 0.0,
+     "n_atk": 234,
+     "n_ben": 220,
+     "bloq_directa": 0.0,
+     "det_directa": 0.0,
+     "bloq_parafrasis": 0.0,
+     "det_parafrasis": 0.0,
+     "bloq_ofuscacion": 0.0,
+     "det_ofuscacion": 0.0,
+     "bloq_exfiltracion": 0.0,
+     "det_exfiltracion": 0.0,
+     "bloq_grafo": 0.0,
+     "det_grafo": 0.0,
+     "bloq_posicion_tardia": 0.0,
+     "det_posicion_tardia": 0.0,
+     "fpr_normal": 0.0,
+     "fpr_palabras_alarmantes": 0.0,
+     "fpr_discusion_seguridad": 0.0,
+     "sub": {
+      "directa/literal": [
+       0.0,
+       0.0,
+       35
+      ],
+      "exfiltracion/comando_en_argumento": [
+       0.0,
+       0.0,
+       6
+      ],
+      "exfiltracion/herr_no_permitida": [
+       0.0,
+       0.0,
+       9
+      ],
+      "exfiltracion/ruta_sensible_herr_permitida": [
+       0.0,
+       0.0,
+       12
+      ],
+      "exfiltracion/secreto_en_consulta": [
+       0.0,
+       0.0,
+       8
+      ],
+      "grafo/herr_no_permitida": [
+       0.0,
+       0.0,
+       8
+      ],
+      "grafo/llamada_antes_de_init": [
+       0.0,
+       0.0,
+       13
+      ],
+      "grafo/metodo_desconocido": [
+       0.0,
+       0.0,
+       5
+      ],
+      "grafo/re_initialize": [
+       0.0,
+       0.0,
+       9
+      ],
+      "ofuscacion/ancho_cero": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/base64": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/escape_unicode_json": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/homoglifos": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/leet_separadores": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/mayusculas": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/partido_campos": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/url": [
+       0.0,
+       0.0,
+       8
+      ],
+      "parafrasis/parafrasis": [
+       0.0,
+       0.0,
+       35
+      ],
+      "posicion_tardia/literal_tras_preambulo": [
+       0.0,
+       0.0,
+       30
+      ]
+     },
+     "capas": {},
+     "capas_fp": {}
+    },
+    {
+     "tpr_bloqueo": 0.0,
+     "tpr_deteccion": 0.0,
+     "fpr": 0.0,
+     "n_atk": 234,
+     "n_ben": 220,
+     "bloq_directa": 0.0,
+     "det_directa": 0.0,
+     "bloq_parafrasis": 0.0,
+     "det_parafrasis": 0.0,
+     "bloq_ofuscacion": 0.0,
+     "det_ofuscacion": 0.0,
+     "bloq_exfiltracion": 0.0,
+     "det_exfiltracion": 0.0,
+     "bloq_grafo": 0.0,
+     "det_grafo": 0.0,
+     "bloq_posicion_tardia": 0.0,
+     "det_posicion_tardia": 0.0,
+     "fpr_normal": 0.0,
+     "fpr_palabras_alarmantes": 0.0,
+     "fpr_discusion_seguridad": 0.0,
+     "sub": {
+      "directa/literal": [
+       0.0,
+       0.0,
+       35
+      ],
+      "exfiltracion/comando_en_argumento": [
+       0.0,
+       0.0,
+       8
+      ],
+      "exfiltracion/herr_no_permitida": [
+       0.0,
+       0.0,
+       7
+      ],
+      "exfiltracion/ruta_sensible_herr_permitida": [
+       0.0,
+       0.0,
+       9
+      ],
+      "exfiltracion/secreto_en_consulta": [
+       0.0,
+       0.0,
+       11
+      ],
+      "grafo/herr_no_permitida": [
+       0.0,
+       0.0,
+       4
+      ],
+      "grafo/llamada_antes_de_init": [
+       0.0,
+       0.0,
+       8
+      ],
+      "grafo/metodo_desconocido": [
+       0.0,
+       0.0,
+       9
+      ],
+      "grafo/re_initialize": [
+       0.0,
+       0.0,
+       14
+      ],
+      "ofuscacion/ancho_cero": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/base64": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/escape_unicode_json": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/homoglifos": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/leet_separadores": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/mayusculas": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/partido_campos": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/url": [
+       0.0,
+       0.0,
+       8
+      ],
+      "parafrasis/parafrasis": [
+       0.0,
+       0.0,
+       35
+      ],
+      "posicion_tardia/literal_tras_preambulo": [
+       0.0,
+       0.0,
+       30
+      ]
+     },
+     "capas": {},
+     "capas_fp": {}
+    }
+   ],
+   "nft": [
+    {
+     "tpr_bloqueo": 0.0,
+     "tpr_deteccion": 0.0,
+     "fpr": 0.0,
+     "n_atk": 234,
+     "n_ben": 220,
+     "bloq_directa": 0.0,
+     "det_directa": 0.0,
+     "bloq_parafrasis": 0.0,
+     "det_parafrasis": 0.0,
+     "bloq_ofuscacion": 0.0,
+     "det_ofuscacion": 0.0,
+     "bloq_exfiltracion": 0.0,
+     "det_exfiltracion": 0.0,
+     "bloq_grafo": 0.0,
+     "det_grafo": 0.0,
+     "bloq_posicion_tardia": 0.0,
+     "det_posicion_tardia": 0.0,
+     "fpr_normal": 0.0,
+     "fpr_palabras_alarmantes": 0.0,
+     "fpr_discusion_seguridad": 0.0,
+     "sub": {
+      "directa/literal": [
+       0.0,
+       0.0,
+       35
+      ],
+      "exfiltracion/comando_en_argumento": [
+       0.0,
+       0.0,
+       10
+      ],
+      "exfiltracion/herr_no_permitida": [
+       0.0,
+       0.0,
+       5
+      ],
+      "exfiltracion/ruta_sensible_herr_permitida": [
+       0.0,
+       0.0,
+       7
+      ],
+      "exfiltracion/secreto_en_consulta": [
+       0.0,
+       0.0,
+       13
+      ],
+      "grafo/herr_no_permitida": [
+       0.0,
+       0.0,
+       11
+      ],
+      "grafo/llamada_antes_de_init": [
+       0.0,
+       0.0,
+       10
+      ],
+      "grafo/metodo_desconocido": [
+       0.0,
+       0.0,
+       7
+      ],
+      "grafo/re_initialize": [
+       0.0,
+       0.0,
+       7
+      ],
+      "ofuscacion/ancho_cero": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/base64": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/escape_unicode_json": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/homoglifos": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/leet_separadores": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/mayusculas": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/partido_campos": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/url": [
+       0.0,
+       0.0,
+       8
+      ],
+      "parafrasis/parafrasis": [
+       0.0,
+       0.0,
+       35
+      ],
+      "posicion_tardia/literal_tras_preambulo": [
+       0.0,
+       0.0,
+       30
+      ]
+     },
+     "capas": {},
+     "capas_fp": {}
+    },
+    {
+     "tpr_bloqueo": 0.0,
+     "tpr_deteccion": 0.0,
+     "fpr": 0.0,
+     "n_atk": 234,
+     "n_ben": 220,
+     "bloq_directa": 0.0,
+     "det_directa": 0.0,
+     "bloq_parafrasis": 0.0,
+     "det_parafrasis": 0.0,
+     "bloq_ofuscacion": 0.0,
+     "det_ofuscacion": 0.0,
+     "bloq_exfiltracion": 0.0,
+     "det_exfiltracion": 0.0,
+     "bloq_grafo": 0.0,
+     "det_grafo": 0.0,
+     "bloq_posicion_tardia": 0.0,
+     "det_posicion_tardia": 0.0,
+     "fpr_normal": 0.0,
+     "fpr_palabras_alarmantes": 0.0,
+     "fpr_discusion_seguridad": 0.0,
+     "sub": {
+      "directa/literal": [
+       0.0,
+       0.0,
+       35
+      ],
+      "exfiltracion/comando_en_argumento": [
+       0.0,
+       0.0,
+       8
+      ],
+      "exfiltracion/herr_no_permitida": [
+       0.0,
+       0.0,
+       8
+      ],
+      "exfiltracion/ruta_sensible_herr_permitida": [
+       0.0,
+       0.0,
+       10
+      ],
+      "exfiltracion/secreto_en_consulta": [
+       0.0,
+       0.0,
+       9
+      ],
+      "grafo/herr_no_permitida": [
+       0.0,
+       0.0,
+       13
+      ],
+      "grafo/llamada_antes_de_init": [
+       0.0,
+       0.0,
+       3
+      ],
+      "grafo/metodo_desconocido": [
+       0.0,
+       0.0,
+       9
+      ],
+      "grafo/re_initialize": [
+       0.0,
+       0.0,
+       10
+      ],
+      "ofuscacion/ancho_cero": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/base64": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/escape_unicode_json": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/homoglifos": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/leet_separadores": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/mayusculas": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/partido_campos": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/url": [
+       0.0,
+       0.0,
+       8
+      ],
+      "parafrasis/parafrasis": [
+       0.0,
+       0.0,
+       35
+      ],
+      "posicion_tardia/literal_tras_preambulo": [
+       0.0,
+       0.0,
+       30
+      ]
+     },
+     "capas": {},
+     "capas_fp": {}
+    },
+    {
+     "tpr_bloqueo": 0.0,
+     "tpr_deteccion": 0.0,
+     "fpr": 0.0,
+     "n_atk": 234,
+     "n_ben": 220,
+     "bloq_directa": 0.0,
+     "det_directa": 0.0,
+     "bloq_parafrasis": 0.0,
+     "det_parafrasis": 0.0,
+     "bloq_ofuscacion": 0.0,
+     "det_ofuscacion": 0.0,
+     "bloq_exfiltracion": 0.0,
+     "det_exfiltracion": 0.0,
+     "bloq_grafo": 0.0,
+     "det_grafo": 0.0,
+     "bloq_posicion_tardia": 0.0,
+     "det_posicion_tardia": 0.0,
+     "fpr_normal": 0.0,
+     "fpr_palabras_alarmantes": 0.0,
+     "fpr_discusion_seguridad": 0.0,
+     "sub": {
+      "directa/literal": [
+       0.0,
+       0.0,
+       35
+      ],
+      "exfiltracion/comando_en_argumento": [
+       0.0,
+       0.0,
+       6
+      ],
+      "exfiltracion/herr_no_permitida": [
+       0.0,
+       0.0,
+       10
+      ],
+      "exfiltracion/ruta_sensible_herr_permitida": [
+       0.0,
+       0.0,
+       12
+      ],
+      "exfiltracion/secreto_en_consulta": [
+       0.0,
+       0.0,
+       7
+      ],
+      "grafo/herr_no_permitida": [
+       0.0,
+       0.0,
+       8
+      ],
+      "grafo/llamada_antes_de_init": [
+       0.0,
+       0.0,
+       3
+      ],
+      "grafo/metodo_desconocido": [
+       0.0,
+       0.0,
+       7
+      ],
+      "grafo/re_initialize": [
+       0.0,
+       0.0,
+       17
+      ],
+      "ofuscacion/ancho_cero": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/base64": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/escape_unicode_json": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/homoglifos": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/leet_separadores": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/mayusculas": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/partido_campos": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/url": [
+       0.0,
+       0.0,
+       8
+      ],
+      "parafrasis/parafrasis": [
+       0.0,
+       0.0,
+       35
+      ],
+      "posicion_tardia/literal_tras_preambulo": [
+       0.0,
+       0.0,
+       30
+      ]
+     },
+     "capas": {},
+     "capas_fp": {}
+    },
+    {
+     "tpr_bloqueo": 0.0,
+     "tpr_deteccion": 0.0,
+     "fpr": 0.0,
+     "n_atk": 234,
+     "n_ben": 220,
+     "bloq_directa": 0.0,
+     "det_directa": 0.0,
+     "bloq_parafrasis": 0.0,
+     "det_parafrasis": 0.0,
+     "bloq_ofuscacion": 0.0,
+     "det_ofuscacion": 0.0,
+     "bloq_exfiltracion": 0.0,
+     "det_exfiltracion": 0.0,
+     "bloq_grafo": 0.0,
+     "det_grafo": 0.0,
+     "bloq_posicion_tardia": 0.0,
+     "det_posicion_tardia": 0.0,
+     "fpr_normal": 0.0,
+     "fpr_palabras_alarmantes": 0.0,
+     "fpr_discusion_seguridad": 0.0,
+     "sub": {
+      "directa/literal": [
+       0.0,
+       0.0,
+       35
+      ],
+      "exfiltracion/comando_en_argumento": [
+       0.0,
+       0.0,
+       6
+      ],
+      "exfiltracion/herr_no_permitida": [
+       0.0,
+       0.0,
+       9
+      ],
+      "exfiltracion/ruta_sensible_herr_permitida": [
+       0.0,
+       0.0,
+       12
+      ],
+      "exfiltracion/secreto_en_consulta": [
+       0.0,
+       0.0,
+       8
+      ],
+      "grafo/herr_no_permitida": [
+       0.0,
+       0.0,
+       8
+      ],
+      "grafo/llamada_antes_de_init": [
+       0.0,
+       0.0,
+       13
+      ],
+      "grafo/metodo_desconocido": [
+       0.0,
+       0.0,
+       5
+      ],
+      "grafo/re_initialize": [
+       0.0,
+       0.0,
+       9
+      ],
+      "ofuscacion/ancho_cero": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/base64": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/escape_unicode_json": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/homoglifos": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/leet_separadores": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/mayusculas": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/partido_campos": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/url": [
+       0.0,
+       0.0,
+       8
+      ],
+      "parafrasis/parafrasis": [
+       0.0,
+       0.0,
+       35
+      ],
+      "posicion_tardia/literal_tras_preambulo": [
+       0.0,
+       0.0,
+       30
+      ]
+     },
+     "capas": {},
+     "capas_fp": {}
+    },
+    {
+     "tpr_bloqueo": 0.0,
+     "tpr_deteccion": 0.0,
+     "fpr": 0.0,
+     "n_atk": 234,
+     "n_ben": 220,
+     "bloq_directa": 0.0,
+     "det_directa": 0.0,
+     "bloq_parafrasis": 0.0,
+     "det_parafrasis": 0.0,
+     "bloq_ofuscacion": 0.0,
+     "det_ofuscacion": 0.0,
+     "bloq_exfiltracion": 0.0,
+     "det_exfiltracion": 0.0,
+     "bloq_grafo": 0.0,
+     "det_grafo": 0.0,
+     "bloq_posicion_tardia": 0.0,
+     "det_posicion_tardia": 0.0,
+     "fpr_normal": 0.0,
+     "fpr_palabras_alarmantes": 0.0,
+     "fpr_discusion_seguridad": 0.0,
+     "sub": {
+      "directa/literal": [
+       0.0,
+       0.0,
+       35
+      ],
+      "exfiltracion/comando_en_argumento": [
+       0.0,
+       0.0,
+       8
+      ],
+      "exfiltracion/herr_no_permitida": [
+       0.0,
+       0.0,
+       7
+      ],
+      "exfiltracion/ruta_sensible_herr_permitida": [
+       0.0,
+       0.0,
+       9
+      ],
+      "exfiltracion/secreto_en_consulta": [
+       0.0,
+       0.0,
+       11
+      ],
+      "grafo/herr_no_permitida": [
+       0.0,
+       0.0,
+       4
+      ],
+      "grafo/llamada_antes_de_init": [
+       0.0,
+       0.0,
+       8
+      ],
+      "grafo/metodo_desconocido": [
+       0.0,
+       0.0,
+       9
+      ],
+      "grafo/re_initialize": [
+       0.0,
+       0.0,
+       14
+      ],
+      "ofuscacion/ancho_cero": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/base64": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/escape_unicode_json": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/homoglifos": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/leet_separadores": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/mayusculas": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/partido_campos": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/url": [
+       0.0,
+       0.0,
+       8
+      ],
+      "parafrasis/parafrasis": [
+       0.0,
+       0.0,
+       35
+      ],
+      "posicion_tardia/literal_tras_preambulo": [
+       0.0,
+       0.0,
+       30
+      ]
+     },
+     "capas": {},
+     "capas_fp": {}
+    }
+   ],
+   "xdp": [
+    {
+     "tpr_bloqueo": 0.0,
+     "tpr_deteccion": 0.0,
+     "fpr": 0.0,
+     "n_atk": 234,
+     "n_ben": 220,
+     "bloq_directa": 0.0,
+     "det_directa": 0.0,
+     "bloq_parafrasis": 0.0,
+     "det_parafrasis": 0.0,
+     "bloq_ofuscacion": 0.0,
+     "det_ofuscacion": 0.0,
+     "bloq_exfiltracion": 0.0,
+     "det_exfiltracion": 0.0,
+     "bloq_grafo": 0.0,
+     "det_grafo": 0.0,
+     "bloq_posicion_tardia": 0.0,
+     "det_posicion_tardia": 0.0,
+     "fpr_normal": 0.0,
+     "fpr_palabras_alarmantes": 0.0,
+     "fpr_discusion_seguridad": 0.0,
+     "sub": {
+      "directa/literal": [
+       0.0,
+       0.0,
+       35
+      ],
+      "exfiltracion/comando_en_argumento": [
+       0.0,
+       0.0,
+       10
+      ],
+      "exfiltracion/herr_no_permitida": [
+       0.0,
+       0.0,
+       5
+      ],
+      "exfiltracion/ruta_sensible_herr_permitida": [
+       0.0,
+       0.0,
+       7
+      ],
+      "exfiltracion/secreto_en_consulta": [
+       0.0,
+       0.0,
+       13
+      ],
+      "grafo/herr_no_permitida": [
+       0.0,
+       0.0,
+       11
+      ],
+      "grafo/llamada_antes_de_init": [
+       0.0,
+       0.0,
+       10
+      ],
+      "grafo/metodo_desconocido": [
+       0.0,
+       0.0,
+       7
+      ],
+      "grafo/re_initialize": [
+       0.0,
+       0.0,
+       7
+      ],
+      "ofuscacion/ancho_cero": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/base64": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/escape_unicode_json": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/homoglifos": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/leet_separadores": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/mayusculas": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/partido_campos": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/url": [
+       0.0,
+       0.0,
+       8
+      ],
+      "parafrasis/parafrasis": [
+       0.0,
+       0.0,
+       35
+      ],
+      "posicion_tardia/literal_tras_preambulo": [
+       0.0,
+       0.0,
+       30
+      ]
+     },
+     "capas": {},
+     "capas_fp": {}
+    },
+    {
+     "tpr_bloqueo": 0.0,
+     "tpr_deteccion": 0.0,
+     "fpr": 0.0,
+     "n_atk": 234,
+     "n_ben": 220,
+     "bloq_directa": 0.0,
+     "det_directa": 0.0,
+     "bloq_parafrasis": 0.0,
+     "det_parafrasis": 0.0,
+     "bloq_ofuscacion": 0.0,
+     "det_ofuscacion": 0.0,
+     "bloq_exfiltracion": 0.0,
+     "det_exfiltracion": 0.0,
+     "bloq_grafo": 0.0,
+     "det_grafo": 0.0,
+     "bloq_posicion_tardia": 0.0,
+     "det_posicion_tardia": 0.0,
+     "fpr_normal": 0.0,
+     "fpr_palabras_alarmantes": 0.0,
+     "fpr_discusion_seguridad": 0.0,
+     "sub": {
+      "directa/literal": [
+       0.0,
+       0.0,
+       35
+      ],
+      "exfiltracion/comando_en_argumento": [
+       0.0,
+       0.0,
+       8
+      ],
+      "exfiltracion/herr_no_permitida": [
+       0.0,
+       0.0,
+       8
+      ],
+      "exfiltracion/ruta_sensible_herr_permitida": [
+       0.0,
+       0.0,
+       10
+      ],
+      "exfiltracion/secreto_en_consulta": [
+       0.0,
+       0.0,
+       9
+      ],
+      "grafo/herr_no_permitida": [
+       0.0,
+       0.0,
+       13
+      ],
+      "grafo/llamada_antes_de_init": [
+       0.0,
+       0.0,
+       3
+      ],
+      "grafo/metodo_desconocido": [
+       0.0,
+       0.0,
+       9
+      ],
+      "grafo/re_initialize": [
+       0.0,
+       0.0,
+       10
+      ],
+      "ofuscacion/ancho_cero": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/base64": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/escape_unicode_json": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/homoglifos": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/leet_separadores": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/mayusculas": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/partido_campos": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/url": [
+       0.0,
+       0.0,
+       8
+      ],
+      "parafrasis/parafrasis": [
+       0.0,
+       0.0,
+       35
+      ],
+      "posicion_tardia/literal_tras_preambulo": [
+       0.0,
+       0.0,
+       30
+      ]
+     },
+     "capas": {},
+     "capas_fp": {}
+    },
+    {
+     "tpr_bloqueo": 0.0,
+     "tpr_deteccion": 0.0,
+     "fpr": 0.0,
+     "n_atk": 234,
+     "n_ben": 220,
+     "bloq_directa": 0.0,
+     "det_directa": 0.0,
+     "bloq_parafrasis": 0.0,
+     "det_parafrasis": 0.0,
+     "bloq_ofuscacion": 0.0,
+     "det_ofuscacion": 0.0,
+     "bloq_exfiltracion": 0.0,
+     "det_exfiltracion": 0.0,
+     "bloq_grafo": 0.0,
+     "det_grafo": 0.0,
+     "bloq_posicion_tardia": 0.0,
+     "det_posicion_tardia": 0.0,
+     "fpr_normal": 0.0,
+     "fpr_palabras_alarmantes": 0.0,
+     "fpr_discusion_seguridad": 0.0,
+     "sub": {
+      "directa/literal": [
+       0.0,
+       0.0,
+       35
+      ],
+      "exfiltracion/comando_en_argumento": [
+       0.0,
+       0.0,
+       6
+      ],
+      "exfiltracion/herr_no_permitida": [
+       0.0,
+       0.0,
+       10
+      ],
+      "exfiltracion/ruta_sensible_herr_permitida": [
+       0.0,
+       0.0,
+       12
+      ],
+      "exfiltracion/secreto_en_consulta": [
+       0.0,
+       0.0,
+       7
+      ],
+      "grafo/herr_no_permitida": [
+       0.0,
+       0.0,
+       8
+      ],
+      "grafo/llamada_antes_de_init": [
+       0.0,
+       0.0,
+       3
+      ],
+      "grafo/metodo_desconocido": [
+       0.0,
+       0.0,
+       7
+      ],
+      "grafo/re_initialize": [
+       0.0,
+       0.0,
+       17
+      ],
+      "ofuscacion/ancho_cero": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/base64": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/escape_unicode_json": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/homoglifos": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/leet_separadores": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/mayusculas": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/partido_campos": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/url": [
+       0.0,
+       0.0,
+       8
+      ],
+      "parafrasis/parafrasis": [
+       0.0,
+       0.0,
+       35
+      ],
+      "posicion_tardia/literal_tras_preambulo": [
+       0.0,
+       0.0,
+       30
+      ]
+     },
+     "capas": {},
+     "capas_fp": {}
+    },
+    {
+     "tpr_bloqueo": 0.0,
+     "tpr_deteccion": 0.0,
+     "fpr": 0.0,
+     "n_atk": 234,
+     "n_ben": 220,
+     "bloq_directa": 0.0,
+     "det_directa": 0.0,
+     "bloq_parafrasis": 0.0,
+     "det_parafrasis": 0.0,
+     "bloq_ofuscacion": 0.0,
+     "det_ofuscacion": 0.0,
+     "bloq_exfiltracion": 0.0,
+     "det_exfiltracion": 0.0,
+     "bloq_grafo": 0.0,
+     "det_grafo": 0.0,
+     "bloq_posicion_tardia": 0.0,
+     "det_posicion_tardia": 0.0,
+     "fpr_normal": 0.0,
+     "fpr_palabras_alarmantes": 0.0,
+     "fpr_discusion_seguridad": 0.0,
+     "sub": {
+      "directa/literal": [
+       0.0,
+       0.0,
+       35
+      ],
+      "exfiltracion/comando_en_argumento": [
+       0.0,
+       0.0,
+       6
+      ],
+      "exfiltracion/herr_no_permitida": [
+       0.0,
+       0.0,
+       9
+      ],
+      "exfiltracion/ruta_sensible_herr_permitida": [
+       0.0,
+       0.0,
+       12
+      ],
+      "exfiltracion/secreto_en_consulta": [
+       0.0,
+       0.0,
+       8
+      ],
+      "grafo/herr_no_permitida": [
+       0.0,
+       0.0,
+       8
+      ],
+      "grafo/llamada_antes_de_init": [
+       0.0,
+       0.0,
+       13
+      ],
+      "grafo/metodo_desconocido": [
+       0.0,
+       0.0,
+       5
+      ],
+      "grafo/re_initialize": [
+       0.0,
+       0.0,
+       9
+      ],
+      "ofuscacion/ancho_cero": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/base64": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/escape_unicode_json": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/homoglifos": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/leet_separadores": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/mayusculas": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/partido_campos": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/url": [
+       0.0,
+       0.0,
+       8
+      ],
+      "parafrasis/parafrasis": [
+       0.0,
+       0.0,
+       35
+      ],
+      "posicion_tardia/literal_tras_preambulo": [
+       0.0,
+       0.0,
+       30
+      ]
+     },
+     "capas": {},
+     "capas_fp": {}
+    },
+    {
+     "tpr_bloqueo": 0.0,
+     "tpr_deteccion": 0.0,
+     "fpr": 0.0,
+     "n_atk": 234,
+     "n_ben": 220,
+     "bloq_directa": 0.0,
+     "det_directa": 0.0,
+     "bloq_parafrasis": 0.0,
+     "det_parafrasis": 0.0,
+     "bloq_ofuscacion": 0.0,
+     "det_ofuscacion": 0.0,
+     "bloq_exfiltracion": 0.0,
+     "det_exfiltracion": 0.0,
+     "bloq_grafo": 0.0,
+     "det_grafo": 0.0,
+     "bloq_posicion_tardia": 0.0,
+     "det_posicion_tardia": 0.0,
+     "fpr_normal": 0.0,
+     "fpr_palabras_alarmantes": 0.0,
+     "fpr_discusion_seguridad": 0.0,
+     "sub": {
+      "directa/literal": [
+       0.0,
+       0.0,
+       35
+      ],
+      "exfiltracion/comando_en_argumento": [
+       0.0,
+       0.0,
+       8
+      ],
+      "exfiltracion/herr_no_permitida": [
+       0.0,
+       0.0,
+       7
+      ],
+      "exfiltracion/ruta_sensible_herr_permitida": [
+       0.0,
+       0.0,
+       9
+      ],
+      "exfiltracion/secreto_en_consulta": [
+       0.0,
+       0.0,
+       11
+      ],
+      "grafo/herr_no_permitida": [
+       0.0,
+       0.0,
+       4
+      ],
+      "grafo/llamada_antes_de_init": [
+       0.0,
+       0.0,
+       8
+      ],
+      "grafo/metodo_desconocido": [
+       0.0,
+       0.0,
+       9
+      ],
+      "grafo/re_initialize": [
+       0.0,
+       0.0,
+       14
+      ],
+      "ofuscacion/ancho_cero": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/base64": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/escape_unicode_json": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/homoglifos": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/leet_separadores": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/mayusculas": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/partido_campos": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/url": [
+       0.0,
+       0.0,
+       8
+      ],
+      "parafrasis/parafrasis": [
+       0.0,
+       0.0,
+       35
+      ],
+      "posicion_tardia/literal_tras_preambulo": [
+       0.0,
+       0.0,
+       30
+      ]
+     },
+     "capas": {},
+     "capas_fp": {}
+    }
+   ],
+   "string_icase_emulado": [
+    {
+     "tpr_bloqueo": 0.44871794871794873,
+     "tpr_deteccion": 0.44871794871794873,
+     "fpr": 0.19545454545454546,
+     "n_atk": 234,
+     "n_ben": 220,
+     "bloq_directa": 1.0,
+     "det_directa": 1.0,
+     "bloq_parafrasis": 0.11428571428571428,
+     "det_parafrasis": 0.11428571428571428,
+     "bloq_ofuscacion": 0.28125,
+     "det_ofuscacion": 0.28125,
+     "bloq_exfiltracion": 0.4,
+     "det_exfiltracion": 0.4,
+     "bloq_grafo": 0.11428571428571428,
+     "det_grafo": 0.11428571428571428,
+     "bloq_posicion_tardia": 1.0,
+     "det_posicion_tardia": 1.0,
+     "fpr_normal": 0.0,
+     "fpr_palabras_alarmantes": 0.38333333333333336,
+     "fpr_discusion_seguridad": 1.0,
+     "sub": {
+      "directa/literal": [
+       1.0,
+       1.0,
+       35
+      ],
+      "exfiltracion/comando_en_argumento": [
+       0.4,
+       0.4,
+       10
+      ],
+      "exfiltracion/herr_no_permitida": [
+       0.2,
+       0.2,
+       5
+      ],
+      "exfiltracion/ruta_sensible_herr_permitida": [
+       0.42857142857142855,
+       0.42857142857142855,
+       7
+      ],
+      "exfiltracion/secreto_en_consulta": [
+       0.46153846153846156,
+       0.46153846153846156,
+       13
+      ],
+      "grafo/herr_no_permitida": [
+       0.36363636363636365,
+       0.36363636363636365,
+       11
+      ],
+      "grafo/llamada_antes_de_init": [
+       0.0,
+       0.0,
+       10
+      ],
+      "grafo/metodo_desconocido": [
+       0.0,
+       0.0,
+       7
+      ],
+      "grafo/re_initialize": [
+       0.0,
+       0.0,
+       7
+      ],
+      "ofuscacion/ancho_cero": [
+       0.25,
+       0.25,
+       8
+      ],
+      "ofuscacion/base64": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/escape_unicode_json": [
+       0.125,
+       0.125,
+       8
+      ],
+      "ofuscacion/homoglifos": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/leet_separadores": [
+       0.125,
+       0.125,
+       8
+      ],
+      "ofuscacion/mayusculas": [
+       1.0,
+       1.0,
+       8
+      ],
+      "ofuscacion/partido_campos": [
+       0.375,
+       0.375,
+       8
+      ],
+      "ofuscacion/url": [
+       0.375,
+       0.375,
+       8
+      ],
+      "parafrasis/parafrasis": [
+       0.11428571428571428,
+       0.11428571428571428,
+       35
+      ],
+      "posicion_tardia/literal_tras_preambulo": [
+       1.0,
+       1.0,
+       30
+      ]
+     },
+     "capas": {
+      "(sin registro)": 105
+     },
+     "capas_fp": {
+      "(sin registro)": 43
+     }
+    },
+    {
+     "tpr_bloqueo": 0.47435897435897434,
+     "tpr_deteccion": 0.47435897435897434,
+     "fpr": 0.22272727272727272,
+     "n_atk": 234,
+     "n_ben": 220,
+     "bloq_directa": 1.0,
+     "det_directa": 1.0,
+     "bloq_parafrasis": 0.14285714285714285,
+     "det_parafrasis": 0.14285714285714285,
+     "bloq_ofuscacion": 0.28125,
+     "det_ofuscacion": 0.28125,
+     "bloq_exfiltracion": 0.5714285714285714,
+     "det_exfiltracion": 0.5714285714285714,
+     "bloq_grafo": 0.08571428571428572,
+     "det_grafo": 0.08571428571428572,
+     "bloq_posicion_tardia": 1.0,
+     "det_posicion_tardia": 1.0,
+     "fpr_normal": 0.0,
+     "fpr_palabras_alarmantes": 0.48333333333333334,
+     "fpr_discusion_seguridad": 1.0,
+     "sub": {
+      "directa/literal": [
+       1.0,
+       1.0,
+       35
+      ],
+      "exfiltracion/comando_en_argumento": [
+       0.5,
+       0.5,
+       8
+      ],
+      "exfiltracion/herr_no_permitida": [
+       0.625,
+       0.625,
+       8
+      ],
+      "exfiltracion/ruta_sensible_herr_permitida": [
+       0.6,
+       0.6,
+       10
+      ],
+      "exfiltracion/secreto_en_consulta": [
+       0.5555555555555556,
+       0.5555555555555556,
+       9
+      ],
+      "grafo/herr_no_permitida": [
+       0.23076923076923078,
+       0.23076923076923078,
+       13
+      ],
+      "grafo/llamada_antes_de_init": [
+       0.0,
+       0.0,
+       3
+      ],
+      "grafo/metodo_desconocido": [
+       0.0,
+       0.0,
+       9
+      ],
+      "grafo/re_initialize": [
+       0.0,
+       0.0,
+       10
+      ],
+      "ofuscacion/ancho_cero": [
+       0.125,
+       0.125,
+       8
+      ],
+      "ofuscacion/base64": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/escape_unicode_json": [
+       0.375,
+       0.375,
+       8
+      ],
+      "ofuscacion/homoglifos": [
+       0.125,
+       0.125,
+       8
+      ],
+      "ofuscacion/leet_separadores": [
+       0.125,
+       0.125,
+       8
+      ],
+      "ofuscacion/mayusculas": [
+       1.0,
+       1.0,
+       8
+      ],
+      "ofuscacion/partido_campos": [
+       0.5,
+       0.5,
+       8
+      ],
+      "ofuscacion/url": [
+       0.0,
+       0.0,
+       8
+      ],
+      "parafrasis/parafrasis": [
+       0.14285714285714285,
+       0.14285714285714285,
+       35
+      ],
+      "posicion_tardia/literal_tras_preambulo": [
+       1.0,
+       1.0,
+       30
+      ]
+     },
+     "capas": {
+      "(sin registro)": 111
+     },
+     "capas_fp": {
+      "(sin registro)": 49
+     }
+    },
+    {
+     "tpr_bloqueo": 0.4188034188034188,
+     "tpr_deteccion": 0.4188034188034188,
+     "fpr": 0.22272727272727272,
+     "n_atk": 234,
+     "n_ben": 220,
+     "bloq_directa": 1.0,
+     "det_directa": 1.0,
+     "bloq_parafrasis": 0.11428571428571428,
+     "det_parafrasis": 0.11428571428571428,
+     "bloq_ofuscacion": 0.234375,
+     "det_ofuscacion": 0.234375,
+     "bloq_exfiltracion": 0.4,
+     "det_exfiltracion": 0.4,
+     "bloq_grafo": 0.0,
+     "det_grafo": 0.0,
+     "bloq_posicion_tardia": 1.0,
+     "det_posicion_tardia": 1.0,
+     "fpr_normal": 0.0,
+     "fpr_palabras_alarmantes": 0.48333333333333334,
+     "fpr_discusion_seguridad": 1.0,
+     "sub": {
+      "directa/literal": [
+       1.0,
+       1.0,
+       35
+      ],
+      "exfiltracion/comando_en_argumento": [
+       0.3333333333333333,
+       0.3333333333333333,
+       6
+      ],
+      "exfiltracion/herr_no_permitida": [
+       0.3,
+       0.3,
+       10
+      ],
+      "exfiltracion/ruta_sensible_herr_permitida": [
+       0.5833333333333334,
+       0.5833333333333334,
+       12
+      ],
+      "exfiltracion/secreto_en_consulta": [
+       0.2857142857142857,
+       0.2857142857142857,
+       7
+      ],
+      "grafo/herr_no_permitida": [
+       0.0,
+       0.0,
+       8
+      ],
+      "grafo/llamada_antes_de_init": [
+       0.0,
+       0.0,
+       3
+      ],
+      "grafo/metodo_desconocido": [
+       0.0,
+       0.0,
+       7
+      ],
+      "grafo/re_initialize": [
+       0.0,
+       0.0,
+       17
+      ],
+      "ofuscacion/ancho_cero": [
+       0.125,
+       0.125,
+       8
+      ],
+      "ofuscacion/base64": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/escape_unicode_json": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/homoglifos": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/leet_separadores": [
+       0.375,
+       0.375,
+       8
+      ],
+      "ofuscacion/mayusculas": [
+       1.0,
+       1.0,
+       8
+      ],
+      "ofuscacion/partido_campos": [
+       0.25,
+       0.25,
+       8
+      ],
+      "ofuscacion/url": [
+       0.125,
+       0.125,
+       8
+      ],
+      "parafrasis/parafrasis": [
+       0.11428571428571428,
+       0.11428571428571428,
+       35
+      ],
+      "posicion_tardia/literal_tras_preambulo": [
+       1.0,
+       1.0,
+       30
+      ]
+     },
+     "capas": {
+      "(sin registro)": 98
+     },
+     "capas_fp": {
+      "(sin registro)": 49
+     }
+    },
+    {
+     "tpr_bloqueo": 0.46153846153846156,
+     "tpr_deteccion": 0.46153846153846156,
+     "fpr": 0.21363636363636362,
+     "n_atk": 234,
+     "n_ben": 220,
+     "bloq_directa": 1.0,
+     "det_directa": 1.0,
+     "bloq_parafrasis": 0.11428571428571428,
+     "det_parafrasis": 0.11428571428571428,
+     "bloq_ofuscacion": 0.3125,
+     "det_ofuscacion": 0.3125,
+     "bloq_exfiltracion": 0.45714285714285713,
+     "det_exfiltracion": 0.45714285714285713,
+     "bloq_grafo": 0.08571428571428572,
+     "det_grafo": 0.08571428571428572,
+     "bloq_posicion_tardia": 1.0,
+     "det_posicion_tardia": 1.0,
+     "fpr_normal": 0.0,
+     "fpr_palabras_alarmantes": 0.45,
+     "fpr_discusion_seguridad": 1.0,
+     "sub": {
+      "directa/literal": [
+       1.0,
+       1.0,
+       35
+      ],
+      "exfiltracion/comando_en_argumento": [
+       0.3333333333333333,
+       0.3333333333333333,
+       6
+      ],
+      "exfiltracion/herr_no_permitida": [
+       0.5555555555555556,
+       0.5555555555555556,
+       9
+      ],
+      "exfiltracion/ruta_sensible_herr_permitida": [
+       0.3333333333333333,
+       0.3333333333333333,
+       12
+      ],
+      "exfiltracion/secreto_en_consulta": [
+       0.625,
+       0.625,
+       8
+      ],
+      "grafo/herr_no_permitida": [
+       0.375,
+       0.375,
+       8
+      ],
+      "grafo/llamada_antes_de_init": [
+       0.0,
+       0.0,
+       13
+      ],
+      "grafo/metodo_desconocido": [
+       0.0,
+       0.0,
+       5
+      ],
+      "grafo/re_initialize": [
+       0.0,
+       0.0,
+       9
+      ],
+      "ofuscacion/ancho_cero": [
+       0.25,
+       0.25,
+       8
+      ],
+      "ofuscacion/base64": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/escape_unicode_json": [
+       0.125,
+       0.125,
+       8
+      ],
+      "ofuscacion/homoglifos": [
+       0.125,
+       0.125,
+       8
+      ],
+      "ofuscacion/leet_separadores": [
+       0.125,
+       0.125,
+       8
+      ],
+      "ofuscacion/mayusculas": [
+       1.0,
+       1.0,
+       8
+      ],
+      "ofuscacion/partido_campos": [
+       0.5,
+       0.5,
+       8
+      ],
+      "ofuscacion/url": [
+       0.375,
+       0.375,
+       8
+      ],
+      "parafrasis/parafrasis": [
+       0.11428571428571428,
+       0.11428571428571428,
+       35
+      ],
+      "posicion_tardia/literal_tras_preambulo": [
+       1.0,
+       1.0,
+       30
+      ]
+     },
+     "capas": {
+      "(sin registro)": 108
+     },
+     "capas_fp": {
+      "(sin registro)": 47
+     }
+    },
+    {
+     "tpr_bloqueo": 0.44871794871794873,
+     "tpr_deteccion": 0.44871794871794873,
+     "fpr": 0.20909090909090908,
+     "n_atk": 234,
+     "n_ben": 220,
+     "bloq_directa": 1.0,
+     "det_directa": 1.0,
+     "bloq_parafrasis": 0.2,
+     "det_parafrasis": 0.2,
+     "bloq_ofuscacion": 0.203125,
+     "det_ofuscacion": 0.203125,
+     "bloq_exfiltracion": 0.5428571428571428,
+     "det_exfiltracion": 0.5428571428571428,
+     "bloq_grafo": 0.02857142857142857,
+     "det_grafo": 0.02857142857142857,
+     "bloq_posicion_tardia": 1.0,
+     "det_posicion_tardia": 1.0,
+     "fpr_normal": 0.0,
+     "fpr_palabras_alarmantes": 0.43333333333333335,
+     "fpr_discusion_seguridad": 1.0,
+     "sub": {
+      "directa/literal": [
+       1.0,
+       1.0,
+       35
+      ],
+      "exfiltracion/comando_en_argumento": [
+       0.375,
+       0.375,
+       8
+      ],
+      "exfiltracion/herr_no_permitida": [
+       0.42857142857142855,
+       0.42857142857142855,
+       7
+      ],
+      "exfiltracion/ruta_sensible_herr_permitida": [
+       0.6666666666666666,
+       0.6666666666666666,
+       9
+      ],
+      "exfiltracion/secreto_en_consulta": [
+       0.6363636363636364,
+       0.6363636363636364,
+       11
+      ],
+      "grafo/herr_no_permitida": [
+       0.25,
+       0.25,
+       4
+      ],
+      "grafo/llamada_antes_de_init": [
+       0.0,
+       0.0,
+       8
+      ],
+      "grafo/metodo_desconocido": [
+       0.0,
+       0.0,
+       9
+      ],
+      "grafo/re_initialize": [
+       0.0,
+       0.0,
+       14
+      ],
+      "ofuscacion/ancho_cero": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/base64": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/escape_unicode_json": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/homoglifos": [
+       0.125,
+       0.125,
+       8
+      ],
+      "ofuscacion/leet_separadores": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/mayusculas": [
+       1.0,
+       1.0,
+       8
+      ],
+      "ofuscacion/partido_campos": [
+       0.25,
+       0.25,
+       8
+      ],
+      "ofuscacion/url": [
+       0.25,
+       0.25,
+       8
+      ],
+      "parafrasis/parafrasis": [
+       0.2,
+       0.2,
+       35
+      ],
+      "posicion_tardia/literal_tras_preambulo": [
+       1.0,
+       1.0,
+       30
+      ]
+     },
+     "capas": {
+      "(sin registro)": 105
+     },
+     "capas_fp": {
+      "(sin registro)": 46
+     }
+    }
+   ],
+   "semantico_offline": [
+    {
+     "tpr_bloqueo": 0.3547008547008547,
+     "tpr_deteccion": 0.3547008547008547,
+     "fpr": 0.06818181818181818,
+     "n_atk": 234,
+     "n_ben": 220,
+     "bloq_directa": 0.8571428571428571,
+     "det_directa": 0.8571428571428571,
+     "bloq_parafrasis": 0.0,
+     "det_parafrasis": 0.0,
+     "bloq_ofuscacion": 0.375,
+     "det_ofuscacion": 0.375,
+     "bloq_exfiltracion": 0.0,
+     "det_exfiltracion": 0.0,
+     "bloq_grafo": 0.0,
+     "det_grafo": 0.0,
+     "bloq_posicion_tardia": 0.9666666666666667,
+     "det_posicion_tardia": 0.9666666666666667,
+     "fpr_normal": 0.0,
+     "fpr_palabras_alarmantes": 0.0,
+     "fpr_discusion_seguridad": 0.75,
+     "sub": {
+      "directa/literal": [
+       0.8571428571428571,
+       0.8571428571428571,
+       35
+      ],
+      "exfiltracion/comando_en_argumento": [
+       0.0,
+       0.0,
+       10
+      ],
+      "exfiltracion/herr_no_permitida": [
+       0.0,
+       0.0,
+       5
+      ],
+      "exfiltracion/ruta_sensible_herr_permitida": [
+       0.0,
+       0.0,
+       7
+      ],
+      "exfiltracion/secreto_en_consulta": [
+       0.0,
+       0.0,
+       13
+      ],
+      "grafo/herr_no_permitida": [
+       0.0,
+       0.0,
+       11
+      ],
+      "grafo/llamada_antes_de_init": [
+       0.0,
+       0.0,
+       10
+      ],
+      "grafo/metodo_desconocido": [
+       0.0,
+       0.0,
+       7
+      ],
+      "grafo/re_initialize": [
+       0.0,
+       0.0,
+       7
+      ],
+      "ofuscacion/ancho_cero": [
+       1.0,
+       1.0,
+       8
+      ],
+      "ofuscacion/base64": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/escape_unicode_json": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/homoglifos": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/leet_separadores": [
+       1.0,
+       1.0,
+       8
+      ],
+      "ofuscacion/mayusculas": [
+       1.0,
+       1.0,
+       8
+      ],
+      "ofuscacion/partido_campos": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/url": [
+       0.0,
+       0.0,
+       8
+      ],
+      "parafrasis/parafrasis": [
+       0.0,
+       0.0,
+       35
+      ],
+      "posicion_tardia/literal_tras_preambulo": [
+       0.9666666666666667,
+       0.9666666666666667,
+       30
+      ]
+     },
+     "capas": {
+      "(sin registro)": 83
+     },
+     "capas_fp": {
+      "(sin registro)": 15
+     }
+    },
+    {
+     "tpr_bloqueo": 0.36324786324786323,
+     "tpr_deteccion": 0.36324786324786323,
+     "fpr": 0.05454545454545454,
+     "n_atk": 234,
+     "n_ben": 220,
+     "bloq_directa": 0.9714285714285714,
+     "det_directa": 0.9714285714285714,
+     "bloq_parafrasis": 0.0,
+     "det_parafrasis": 0.0,
+     "bloq_ofuscacion": 0.375,
+     "det_ofuscacion": 0.375,
+     "bloq_exfiltracion": 0.0,
+     "det_exfiltracion": 0.0,
+     "bloq_grafo": 0.0,
+     "det_grafo": 0.0,
+     "bloq_posicion_tardia": 0.9,
+     "det_posicion_tardia": 0.9,
+     "fpr_normal": 0.0,
+     "fpr_palabras_alarmantes": 0.0,
+     "fpr_discusion_seguridad": 0.6,
+     "sub": {
+      "directa/literal": [
+       0.9714285714285714,
+       0.9714285714285714,
+       35
+      ],
+      "exfiltracion/comando_en_argumento": [
+       0.0,
+       0.0,
+       8
+      ],
+      "exfiltracion/herr_no_permitida": [
+       0.0,
+       0.0,
+       8
+      ],
+      "exfiltracion/ruta_sensible_herr_permitida": [
+       0.0,
+       0.0,
+       10
+      ],
+      "exfiltracion/secreto_en_consulta": [
+       0.0,
+       0.0,
+       9
+      ],
+      "grafo/herr_no_permitida": [
+       0.0,
+       0.0,
+       13
+      ],
+      "grafo/llamada_antes_de_init": [
+       0.0,
+       0.0,
+       3
+      ],
+      "grafo/metodo_desconocido": [
+       0.0,
+       0.0,
+       9
+      ],
+      "grafo/re_initialize": [
+       0.0,
+       0.0,
+       10
+      ],
+      "ofuscacion/ancho_cero": [
+       1.0,
+       1.0,
+       8
+      ],
+      "ofuscacion/base64": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/escape_unicode_json": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/homoglifos": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/leet_separadores": [
+       1.0,
+       1.0,
+       8
+      ],
+      "ofuscacion/mayusculas": [
+       1.0,
+       1.0,
+       8
+      ],
+      "ofuscacion/partido_campos": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/url": [
+       0.0,
+       0.0,
+       8
+      ],
+      "parafrasis/parafrasis": [
+       0.0,
+       0.0,
+       35
+      ],
+      "posicion_tardia/literal_tras_preambulo": [
+       0.9,
+       0.9,
+       30
+      ]
+     },
+     "capas": {
+      "(sin registro)": 85
+     },
+     "capas_fp": {
+      "(sin registro)": 12
+     }
+    },
+    {
+     "tpr_bloqueo": 0.3547008547008547,
+     "tpr_deteccion": 0.3547008547008547,
+     "fpr": 0.07272727272727272,
+     "n_atk": 234,
+     "n_ben": 220,
+     "bloq_directa": 0.9714285714285714,
+     "det_directa": 0.9714285714285714,
+     "bloq_parafrasis": 0.0,
+     "det_parafrasis": 0.0,
+     "bloq_ofuscacion": 0.375,
+     "det_ofuscacion": 0.375,
+     "bloq_exfiltracion": 0.0,
+     "det_exfiltracion": 0.0,
+     "bloq_grafo": 0.0,
+     "det_grafo": 0.0,
+     "bloq_posicion_tardia": 0.8333333333333334,
+     "det_posicion_tardia": 0.8333333333333334,
+     "fpr_normal": 0.0,
+     "fpr_palabras_alarmantes": 0.0,
+     "fpr_discusion_seguridad": 0.8,
+     "sub": {
+      "directa/literal": [
+       0.9714285714285714,
+       0.9714285714285714,
+       35
+      ],
+      "exfiltracion/comando_en_argumento": [
+       0.0,
+       0.0,
+       6
+      ],
+      "exfiltracion/herr_no_permitida": [
+       0.0,
+       0.0,
+       10
+      ],
+      "exfiltracion/ruta_sensible_herr_permitida": [
+       0.0,
+       0.0,
+       12
+      ],
+      "exfiltracion/secreto_en_consulta": [
+       0.0,
+       0.0,
+       7
+      ],
+      "grafo/herr_no_permitida": [
+       0.0,
+       0.0,
+       8
+      ],
+      "grafo/llamada_antes_de_init": [
+       0.0,
+       0.0,
+       3
+      ],
+      "grafo/metodo_desconocido": [
+       0.0,
+       0.0,
+       7
+      ],
+      "grafo/re_initialize": [
+       0.0,
+       0.0,
+       17
+      ],
+      "ofuscacion/ancho_cero": [
+       1.0,
+       1.0,
+       8
+      ],
+      "ofuscacion/base64": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/escape_unicode_json": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/homoglifos": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/leet_separadores": [
+       1.0,
+       1.0,
+       8
+      ],
+      "ofuscacion/mayusculas": [
+       1.0,
+       1.0,
+       8
+      ],
+      "ofuscacion/partido_campos": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/url": [
+       0.0,
+       0.0,
+       8
+      ],
+      "parafrasis/parafrasis": [
+       0.0,
+       0.0,
+       35
+      ],
+      "posicion_tardia/literal_tras_preambulo": [
+       0.8333333333333334,
+       0.8333333333333334,
+       30
+      ]
+     },
+     "capas": {
+      "(sin registro)": 83
+     },
+     "capas_fp": {
+      "(sin registro)": 16
+     }
+    },
+    {
+     "tpr_bloqueo": 0.3717948717948718,
+     "tpr_deteccion": 0.3717948717948718,
+     "fpr": 0.07272727272727272,
+     "n_atk": 234,
+     "n_ben": 220,
+     "bloq_directa": 0.9714285714285714,
+     "det_directa": 0.9714285714285714,
+     "bloq_parafrasis": 0.0,
+     "det_parafrasis": 0.0,
+     "bloq_ofuscacion": 0.375,
+     "det_ofuscacion": 0.375,
+     "bloq_exfiltracion": 0.0,
+     "det_exfiltracion": 0.0,
+     "bloq_grafo": 0.0,
+     "det_grafo": 0.0,
+     "bloq_posicion_tardia": 0.9666666666666667,
+     "det_posicion_tardia": 0.9666666666666667,
+     "fpr_normal": 0.0,
+     "fpr_palabras_alarmantes": 0.0,
+     "fpr_discusion_seguridad": 0.8,
+     "sub": {
+      "directa/literal": [
+       0.9714285714285714,
+       0.9714285714285714,
+       35
+      ],
+      "exfiltracion/comando_en_argumento": [
+       0.0,
+       0.0,
+       6
+      ],
+      "exfiltracion/herr_no_permitida": [
+       0.0,
+       0.0,
+       9
+      ],
+      "exfiltracion/ruta_sensible_herr_permitida": [
+       0.0,
+       0.0,
+       12
+      ],
+      "exfiltracion/secreto_en_consulta": [
+       0.0,
+       0.0,
+       8
+      ],
+      "grafo/herr_no_permitida": [
+       0.0,
+       0.0,
+       8
+      ],
+      "grafo/llamada_antes_de_init": [
+       0.0,
+       0.0,
+       13
+      ],
+      "grafo/metodo_desconocido": [
+       0.0,
+       0.0,
+       5
+      ],
+      "grafo/re_initialize": [
+       0.0,
+       0.0,
+       9
+      ],
+      "ofuscacion/ancho_cero": [
+       1.0,
+       1.0,
+       8
+      ],
+      "ofuscacion/base64": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/escape_unicode_json": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/homoglifos": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/leet_separadores": [
+       1.0,
+       1.0,
+       8
+      ],
+      "ofuscacion/mayusculas": [
+       1.0,
+       1.0,
+       8
+      ],
+      "ofuscacion/partido_campos": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/url": [
+       0.0,
+       0.0,
+       8
+      ],
+      "parafrasis/parafrasis": [
+       0.0,
+       0.0,
+       35
+      ],
+      "posicion_tardia/literal_tras_preambulo": [
+       0.9666666666666667,
+       0.9666666666666667,
+       30
+      ]
+     },
+     "capas": {
+      "(sin registro)": 87
+     },
+     "capas_fp": {
+      "(sin registro)": 16
+     }
+    },
+    {
+     "tpr_bloqueo": 0.36324786324786323,
+     "tpr_deteccion": 0.36324786324786323,
+     "fpr": 0.06363636363636363,
+     "n_atk": 234,
+     "n_ben": 220,
+     "bloq_directa": 0.9142857142857143,
+     "det_directa": 0.9142857142857143,
+     "bloq_parafrasis": 0.0,
+     "det_parafrasis": 0.0,
+     "bloq_ofuscacion": 0.375,
+     "det_ofuscacion": 0.375,
+     "bloq_exfiltracion": 0.0,
+     "det_exfiltracion": 0.0,
+     "bloq_grafo": 0.0,
+     "det_grafo": 0.0,
+     "bloq_posicion_tardia": 0.9666666666666667,
+     "det_posicion_tardia": 0.9666666666666667,
+     "fpr_normal": 0.0,
+     "fpr_palabras_alarmantes": 0.0,
+     "fpr_discusion_seguridad": 0.7,
+     "sub": {
+      "directa/literal": [
+       0.9142857142857143,
+       0.9142857142857143,
+       35
+      ],
+      "exfiltracion/comando_en_argumento": [
+       0.0,
+       0.0,
+       8
+      ],
+      "exfiltracion/herr_no_permitida": [
+       0.0,
+       0.0,
+       7
+      ],
+      "exfiltracion/ruta_sensible_herr_permitida": [
+       0.0,
+       0.0,
+       9
+      ],
+      "exfiltracion/secreto_en_consulta": [
+       0.0,
+       0.0,
+       11
+      ],
+      "grafo/herr_no_permitida": [
+       0.0,
+       0.0,
+       4
+      ],
+      "grafo/llamada_antes_de_init": [
+       0.0,
+       0.0,
+       8
+      ],
+      "grafo/metodo_desconocido": [
+       0.0,
+       0.0,
+       9
+      ],
+      "grafo/re_initialize": [
+       0.0,
+       0.0,
+       14
+      ],
+      "ofuscacion/ancho_cero": [
+       1.0,
+       1.0,
+       8
+      ],
+      "ofuscacion/base64": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/escape_unicode_json": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/homoglifos": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/leet_separadores": [
+       1.0,
+       1.0,
+       8
+      ],
+      "ofuscacion/mayusculas": [
+       1.0,
+       1.0,
+       8
+      ],
+      "ofuscacion/partido_campos": [
+       0.0,
+       0.0,
+       8
+      ],
+      "ofuscacion/url": [
+       0.0,
+       0.0,
+       8
+      ],
+      "parafrasis/parafrasis": [
+       0.0,
+       0.0,
+       35
+      ],
+      "posicion_tardia/literal_tras_preambulo": [
+       0.9666666666666667,
+       0.9666666666666667,
+       30
+      ]
+     },
+     "capas": {
+      "(sin registro)": 85
+     },
+     "capas_fp": {
+      "(sin registro)": 14
+     }
+    }
+   ]
+  }
+ },
+ "lat": {
+  "sin_filtro": {
+   "p50": [
+    29.246,
+    21.0,
+    29.454,
+    37.516,
+    29.559
+   ],
+   "p99": [
+    58.779,
+    31.577,
+    49.306,
+    71.693,
+    72.984
+   ],
+   "media": [
+    31.403594000000002,
+    39.2403505,
+    26.627314,
+    38.904258500000005,
+    31.797371
+   ],
+   "fallas": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "d_p50": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "d_p99": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "nft": {
+   "p50": [
+    57.291,
+    48.898,
+    49.387,
+    49.337,
+    56.901
+   ],
+   "p99": [
+    89.798,
+    1976.648,
+    100.991,
+    732.005,
+    140.117
+   ],
+   "media": [
+    58.9409355,
+    94.652721,
+    54.645103000000006,
+    115.9576395,
+    59.09894
+   ],
+   "fallas": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "d_p50": [
+    28.044999999999998,
+    27.898000000000003,
+    19.933,
+    11.821000000000005,
+    27.342000000000002
+   ],
+   "d_p99": [
+    31.019,
+    1945.071,
+    51.685,
+    660.312,
+    67.133
+   ]
+  },
+  "xdp": {
+   "p50": [
+    44.763,
+    43.349,
+    45.608,
+    36.944,
+    44.925
+   ],
+   "p99": [
+    197.571,
+    440.637,
+    443.221,
+    519.584,
+    139.718
+   ],
+   "media": [
+    52.78690101522843,
+    61.3233894255211,
+    56.19904060913706,
+    76.94126391015824,
+    50.566596749619094
+   ],
+   "fallas": [
+    32,
+    35,
+    31,
+    42,
+    31
+   ],
+   "d_p50": [
+    15.517,
+    22.348999999999997,
+    16.153999999999996,
+    -0.5719999999999956,
+    15.365999999999996
+   ],
+   "d_p99": [
+    138.792,
+    409.06,
+    393.915,
+    447.89099999999996,
+    66.734
+   ]
+  }
+ }
+}

@@ -48,6 +48,11 @@ hasta que el cliente hace timeout.
 - "Velocidad de placa": no medido. Se probó en modo `xdpgeneric` sobre `lo`,
   que pasa por la pila de red y **no** es el camino rápido del driver.
 
+## Valor contra línea base
+Ver `VALOR.md` (21/10/2026): contra una lista estática no demuestra valor en
+inyección; solo detecta, tarde, anomalías de protocolo MCP. La capa semántica
+no llega a ver los argumentos (192 B). Reproducir: `bash scripts/experimento-valor.sh`.
+
 ## Requisitos
 Linux con XDP, `clang`, `libbpf-dev` (headers), Rust ≥ 1.85, `sudo` para la demo.
 En la computadora compartida todo eso está instalado (kernel 6.12.94+).

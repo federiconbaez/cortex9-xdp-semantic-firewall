@@ -31,3 +31,11 @@ Esto es lo que **no** hace, para que nadie lo venda como otra cosa.
 ## Attach
 Último attach: OK en `lo`, modo `xdpgeneric`, kernel 6.12.94+, con `sudo -n`.
 No hubo fallos de attach que registrar.
+
+## Medido en el experimento de valor (21/10/2026, ver VALOR.md)
+- Con un sobre JSON-RPC normal, los argumentos de `tools/call` empiezan después
+  del byte ~200: la capa semántica (192 B) **no los ve**. Actuó 0 veces en 2270
+  sesiones. Con cabeceras reales de MCP streamable HTTP (263 B) tampoco se ve `method`.
+- Bug: si el nombre de la herramienta queda cortado en el byte 192, el grafo con
+  lista blanca da `ToolNotAllowed("")` y corta sesiones legítimas (7,7–12,3 % de
+  los benignos).

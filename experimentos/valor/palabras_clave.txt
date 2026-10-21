@@ -1,0 +1,32 @@
+# Lista estática de la línea base: lo que un admin competente escribiría hoy
+# para MCP/LLM en claro, SIN conocer el corpus. Una cadena por línea.
+# Se compara sin distinguir mayúsculas (emulación xt_string --icase) y, en
+# nftables real, con variantes minúscula / Capitalizada / Título / MAYÚSCULA.
+# --- inyección de prompts (frases conocidas) ---
+ignore previous
+ignore all previous
+ignore prior
+disregard previous
+disregard all
+forget your instructions
+system prompt
+you are now
+developer mode
+do anything now
+jailbreak
+<|im_start|>
+[INST]
+<<SYS>>
+ignora las instrucciones
+olvida tus instrucciones
+# --- exfiltración / rutas sensibles ---
+/etc/passwd
+/etc/shadow
+id_rsa
+.aws/credentials
+exfiltrate
+# --- herramientas peligrosas (serialización compacta) ---
+"name":"shell"
+"name":"exec"
+"name":"bash"
+"name":"run_command"
