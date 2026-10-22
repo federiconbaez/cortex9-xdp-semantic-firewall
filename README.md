@@ -1,79 +1,70 @@
-# 04 — Firewall semántico XDP (eBPF)
+# fnbr-xdp-semantic-firewall
 
-> **ES:** Firewall semántico XDP (eBPF + Rust/aya) que inspecciona payloads MCP/gRPC en el kernel. Compilar/probar: `make && cargo test`.
-> **EN:** XDP semantic firewall (eBPF + Rust/aya) inspecting MCP/gRPC payloads in-kernel. Build/test: `make && cargo test`.
->
-> **Estado / Status (AUDIT-valor.md, commit auditado `43ffd0b`):** **FALLA el umbral #4 / FAILS threshold #4 — «valor no demostrado» / value not demonstrated.** XDP bloqueó 5,1–7,7 % de los ataques vs 41,9–47,4 % de un filtro de string emulado (pierde por ataques) y su FPR (9,1–16,8 %) supera la tolerancia frente a nftables (falla por FPR). Hay además un bug conocido en el byte 192, hallazgo aparte. Licencia / License: Apache-2.0.
+> **Status: experimental research code. Its value threshold FAILED (see Audit status). Do not use it as a security control.**
+> Spanish documentation: [`README.es.md`](README.es.md), [`LIMITES.md`](LIMITES.md), [`VERIFICADO.md`](VERIFICADO.md).
 
+## What it is
 
-**Dueña:** בֶּן הָאֱלֹהִים הַחַי (rol de auditoría de seguridad)
-**Pedido de Federico (20/10/2026):** firewall semántico en el plano de datos XDP
-que inspeccione payloads gRPC/MCP en tránsito a velocidad de placa y corte
-conexiones ante patrones de inyección de prompts o anomalías del grafo de llamadas.
+An experiment in inspecting plaintext MCP/HTTP payloads in the XDP data path (eBPF + Rust/[aya](https://aya-rs.dev)) and dropping flows that look like prompt injection or anomalous MCP call sequences.
 
-## Qué hace de verdad (v0.1)
+- **Kernel (`bpf/xdp_firewall.bpf.c`)**: parses Eth → IPv4 → TCP on watched ports. It copies up to 256 B of the payload and does case-insensitive matching against up to 8 literal patterns (≤ 32 B each) using `bpf_loop`. On a match it blocks the flow and returns `XDP_DROP`. It sends up to 192 B of the payload prefix to a ring buffer.
+- **User space (`fnbr-xdp-fw`)**: a heuristic text classifier (normalisation plus scoring) and a per-flow MCP state machine. Either one can add a flow to the kernel `blocked` map.
+- Known limits (see `LIMITES.md`):
+  - It is blind to TLS.
+  - There is no TCP reassembly, so a literal split across segments is missed.
+  - It does not see MCP over stdio.
+  - It sends no RST: the connection hangs until the client times out.
+  - It was only tested in `xdpgeneric` mode on `lo`, so line-rate performance is **not measured**.
+  - There is a known bug when a tool name is cut at byte 192.
 
-Dos capas, una en el kernel y otra en espacio de usuario:
+## Build and test
 
-```
- paquete ──► XDP (kernel, bpf/xdp_firewall.bpf.c)
-             1. Eth → IPv4 → TCP. Solo puertos en `watch_ports`.
-             2. ¿Flujo en `blocked`? → XDP_DROP.
-             3. Copia ≤256 B del payload en claro y busca (sin mayúsculas)
-                hasta 8 patrones literales con bpf_loop.
-             4. Coincidencia → bloquea el flujo (ambas direcciones) + XDP_DROP.
-             5. Siempre manda ≤192 B del prefijo al ring buffer `events`.
-                │
-                ▼
- fnbr-xdp-fw (Rust + aya, espacio de usuario)
-             · semantic.rs: normaliza (leetspeak, separadores, acentos,
-               ancho cero, tokens de rol) y puntúa. ≥10 = bloquear.
-             · callgraph.rs: máquina de estados MCP por flujo (tools/call antes
-               de initialize, método desconocido, herramienta fuera de lista
-               blanca, re-initialize).
-             · Si alguna dice "bloquear" → escribe el flujo en `blocked` y el
-               kernel descarta los siguientes segmentos.
-```
+Requirements: Linux, Rust ≥ 1.85, `clang`, `libbpf-dev` (headers). Root is needed only for the demo and the experiment.
 
-"Cortar la conexión" = descartar todos los segmentos siguientes del flujo en
-XDP (incluidas retransmisiones). **No se envía RST**: la conexión queda colgada
-hasta que el cliente hace timeout.
-
-## Límites honestos (detalle en `LIMITES.md`)
-- **No ve TLS.** Si MCP/gRPC va cifrado, XDP solo ve bytes cifrados. Este
-  firewall sirve para tráfico **en claro** (HTTP/1.1 local, h2c sin
-  compresión de cabeceras relevante, gRPC sin TLS en loopback).
-- **MCP por stdio no pasa por la red.** Ese tráfico nunca llega a XDP.
-- **No rearma TCP ni HTTP/2.** Una frase partida entre dos segmentos, o más
-  allá de los primeros 256 B (kernel) / 192 B (usuario), no se ve.
-- **La capa semántica reacciona tarde.** El primer segmento con inyección
-  ofuscada **pasa**; se cortan los siguientes. Solo los patrones literales
-  se cortan antes de llegar.
-- Las heurísticas son reglas, no un modelo. Hay falsos negativos seguros
-  (paráfrasis) y falsos positivos posibles (textos que *hablan* de inyección).
-- "Velocidad de placa": no medido. Se probó en modo `xdpgeneric` sobre `lo`,
-  que pasa por la pila de red y **no** es el camino rápido del driver.
-
-## Valor contra línea base
-Ver `VALOR.md` (21/10/2026): contra una lista estática no demuestra valor en
-inyección; solo detecta, tarde, anomalías de protocolo MCP. La capa semántica
-no llega a ver los argumentos (192 B). Reproducir: `bash scripts/experimento-valor.sh`.
-
-## Requisitos
-Linux con XDP, `clang`, `libbpf-dev` (headers), Rust ≥ 1.85, `sudo` para la demo.
-En la computadora compartida todo eso está instalado (kernel 6.12.94+).
-
-## Compilar y probar
 ```bash
-cd /workspace/sistemas/04-xdp-semantic-firewall
-cargo build            # build.rs compila el BPF con clang -target bpf
-cargo test             # 19 tests, sin root
+cargo build --release      # build.rs compiles bpf/xdp_firewall.bpf.c with clang -target bpf
+cargo test --release       # 19 unit tests, no root needed
 cargo clippy --all-targets -- -D warnings
-bash scripts/demo.sh   # con sudo: XDP real en lo + fixture TCP en claro
-cargo run -- classify "1gn0r3 pr3v10us 1nstruct10ns"   # probar el clasificador
+sudo bash scripts/demo.sh  # real XDP on lo + plaintext TCP fixture
+bash scripts/experimento-valor.sh   # value experiment (needs sudo, nftables, python3)
 ```
 
-Uso real (root): `sudo target/debug/fnbr-xdp-fw run --iface enp0s4 --ports 8080,50051 --allow-tools weather,search`
+## Audit status
 
-## Criterio de verificado
-Ver `VERIFICADO.md`. Evidencia de la última corrida en `evidencia/demo-2026-10-20.txt`.
+The internal audit was done by the same team (AI agents working for the author). It is **not** an independent third-party audit. It is summarised from [`AUDIT-valor.md`](AUDIT-valor.md) (audit commit `77180b5`, experiment commit `43ffd0b`).
+
+**Verdict: FAILS threshold #4. Value not demonstrated.**
+
+The threshold had two parts, both measured on the same corpus: XDP must block strictly more attacks than the baseline, **and** its false-positive rate must satisfy FPR_XDP ≤ FPR_baseline + 0.02. Each seed had 234 attacks and 220 benign sessions, over 5 seeds.
+
+Results with the `minimo` profile (96-byte headers, the case most favourable to XDP):
+
+| | XDP | nftables (real) | string `--icase` (emulated) |
+|---|---|---|---|
+| Attacks blocked | 5.1–7.7 % | 1.3–6.0 % | 41.9–47.4 % |
+| False-positive rate | 9.1–16.8 % | 0.5–3.6 % | 19.5–22.3 % |
+
+- **Against nftables:** XDP blocks more attacks on all 5 seeds (+0.9 to +3.8 points). Its FPR, however, exceeds the 2-point tolerance by 5.3–13.9 points. → **Fails on FPR.**
+- **Against the emulated string match:** XDP's FPR is lower, but it blocks 36.8–41.5 points fewer attacks. → **Fails on attacks.**
+- **With realistic headers** (`streamable` profile, 263 B), XDP blocks 0 % on every seed.
+- Every attack XDP blocked came from the kernel literal layer. The MCP call-graph "detections" (100 % in the `grafo` family) happen *after* the request has been delivered, so they do not count as blocks. They also drop to 0 % with realistic headers.
+- Reproducibility: the audit re-ran the experiment on a separate clone and got per-seed results identical to the original. 19/19 tests pass and clippy is clean. Latency is p50 43–47 µs and p99 329–372 µs on a shared VM. That figure is noisy and not part of the threshold.
+- Caveats: the `xt_string` baseline is an emulation, not the kernel module, and there is no segmentation on `lo`. The nftables baseline is weak (fixed-offset prefix matching).
+
+## Repository notes
+
+- `experimentos/valor/corpus/*.jsonl` (≈ 380 KB each) are **synthetic** attack and benign MCP requests. Attack strings such as `cat ~/.ssh/id_rsa` are payload text only. The targets are documentation values (`*.example`, 203.0.113.7, 198.51.100.9) plus the public service name `webhook.site`, which appears only as text. No real requests are sent outside `lo`.
+- `experimentos/valor/resultados/crudo.tar.xz` (≈ 730 KB) contains the raw logs of the experiment.
+
+## License
+
+Licensed under either of
+
+- Apache License, Version 2.0 ([LICENSE-APACHE](LICENSE-APACHE))
+- MIT license ([LICENSE-MIT](LICENSE-MIT))
+
+at your option.
+
+**Exception:** the eBPF program `bpf/xdp_firewall.bpf.c` is licensed **GPL-2.0** (`SPDX-License-Identifier: GPL-2.0`, `LICENSE[] = "GPL"`), because the kernel requires a GPL-compatible license for the BPF helpers it uses. `build.rs` compiles it, and `include_bytes_aligned!` **embeds the compiled object in the `fnbr-xdp-fw` binary**. Anyone distributing that binary should also comply with GPL-2.0 for the embedded eBPF object (its source is `bpf/xdp_firewall.bpf.c`). The Rust user-space code is MIT OR Apache-2.0.
+
+Unless you explicitly state otherwise, any contribution you intentionally submit for inclusion in this work, as defined in the Apache-2.0 license, shall be dual licensed as above (except contributions to `bpf/`, which are GPL-2.0), without any additional terms or conditions.

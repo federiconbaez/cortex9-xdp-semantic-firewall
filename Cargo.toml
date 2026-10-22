@@ -3,7 +3,7 @@ name = "fnbr-xdp-semantic-firewall"
 version = "0.1.0"
 edition = "2021"
 description = "Firewall semántico XDP (eBPF) para payloads TCP en claro + clasificador en espacio de usuario"
-license = "GPL-2.0-only"
+license = "MIT OR Apache-2.0"
 publish = false
 build = "build.rs"
 
