@@ -1,5 +1,11 @@
 # 04 — Firewall semántico XDP (eBPF)
 
+> **ES:** Firewall semántico XDP (eBPF + Rust/aya) que inspecciona payloads MCP/gRPC en el kernel. Compilar/probar: `make && cargo test`.
+> **EN:** XDP semantic firewall (eBPF + Rust/aya) inspecting MCP/gRPC payloads in-kernel. Build/test: `make && cargo test`.
+>
+> **Estado / Status (AUDIT-valor.md, commit auditado `43ffd0b`):** **FALLA el umbral #4 / FAILS threshold #4 — «valor no demostrado» / value not demonstrated.** XDP bloqueó 5,1–7,7 % de los ataques vs 41,9–47,4 % de un filtro de string emulado (pierde por ataques) y su FPR (9,1–16,8 %) supera la tolerancia frente a nftables (falla por FPR). Hay además un bug conocido en el byte 192, hallazgo aparte. Licencia / License: Apache-2.0.
+
+
 **Dueña:** בֶּן הָאֱלֹהִים הַחַי (rol de auditoría de seguridad)
 **Pedido de Federico (20/10/2026):** firewall semántico en el plano de datos XDP
 que inspeccione payloads gRPC/MCP en tránsito a velocidad de placa y corte
